@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Badge from "./Badge";
+import ExpandToggle from "./ExpandToggle";
 
 interface Props {
   index: number;
@@ -29,11 +30,9 @@ const isSmallViewport = (num: number) => {
 };
 
 const gradeDisplay = (grade: string) => {
-  if (grade == "Double Distinction*" && isSmallViewport(880)) {
-    return "DD*";
-  } else {
-    return grade;
-  }
+  const output =
+    grade == "Double Distinction*" && isSmallViewport(880) ? "DD*" : grade;
+  return output;
 };
 
 const EducationCard = ({ index, data }: Props) => {
@@ -41,6 +40,7 @@ const EducationCard = ({ index, data }: Props) => {
   const cardClassName = data.useBadges
     ? "EducationCard card expandable"
     : "EducationCard card";
+
   return (
     <div className={cardClassName} id={`EducationCard-${index}`}>
       <div className="cardHeader">

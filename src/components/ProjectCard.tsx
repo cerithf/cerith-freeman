@@ -31,7 +31,9 @@ const ProjectCard = ({ data }: Props) => {
         </div>
         <h2>{data.name}</h2>
         <h4 className="subtitle">{data.subtitle}</h4>
-        <ExpandToggle title="see more">{data.description}</ExpandToggle>
+        <ExpandToggle title="see more" style={1}>
+          {data.description}
+        </ExpandToggle>
       </div>
     </div>
   );

@@ -97,7 +97,7 @@ p.dateDisplay {
     color: black !important;
 }
 
-// EXPAND TOGGLE
+// EXPAND TOGGLE -------------------------
 
 .ExpandToggle  {
 
@@ -183,7 +183,27 @@ p.dateDisplay {
     }
 }
 
-// NAV BAR
+// Alternative style    
+.ExpandToggle-1 {
+
+    button {
+        transform: scale(0.75);
+    }
+
+    .content {
+        padding-top: 6px;
+        line-height: 100%;
+        font-weight: 300;
+    }
+
+    h3 {
+            font-family: $bodyFont;
+            font-size: 1.2em;
+            font-weight: bold;
+    }
+}
+
+// NAV BAR --------------------------------
 
 ul.NavBar {
     list-style: none;
@@ -444,25 +464,6 @@ ul.NavBar {
         background-color: rgba(255, 255, 255, 0.9);
         padding: 6px 12px;
         width: 100%;
-
-        h3 {
-            font-family: $bodyFont;
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-
-        .ExpandToggle {
-
-            button {
-                transform: scale(0.75);
-            }
-        
-            .content {
-                padding-top: 6px;
-                line-height: 100%;
-                font-weight: 300;
-            }
-        }
     }
     
     h4.subtitle {
@@ -622,7 +623,6 @@ opacity: 40%;
                 color: white;
             }
         }
-
 
         div.expandable:hover {
             width: 400px;
@@ -802,6 +802,11 @@ opacity: 40%;
         display: block;
     }
 
+    h1.PageTitle {
+        font-size: 4em;
+        padding: 16px;
+    }
+
     .homePage {
         #headingContainer {
             font-size: 16px;
@@ -883,7 +888,9 @@ opacity: 40%;
                 min-width: inherit;
                 max-width: inherit;
                 .qualificationName {font-size: 1em;}
+                .qualifications {font-size: 0.75em;}
             }
+            
         }
 
 

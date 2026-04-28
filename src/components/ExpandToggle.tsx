@@ -3,13 +3,14 @@ import Chevron from "../assets/chevron-right-solid-full.svg";
 
 interface Props {
   title: string;
+  style: number;
   children: ReactNode;
 }
 
-const ExpandToggle = ({ title, children }: Props) => {
+const ExpandToggle = ({ title, style = 0, children }: Props) => {
   const [isOpen, setIsOpen] = useState(true);
   return (
-    <div className="ExpandToggle">
+    <div className={`ExpandToggle ExpandToggle-${style}`}>
       <span className="expandToggleHeader">
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (
