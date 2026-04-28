@@ -10,9 +10,9 @@ interface Props {
     year: number;
     level: string;
     subtitle?: string;
-    qualificationsSummary: string;
-    qualifications: [{ name: string; grade: string; emoji: string }];
-    useBadges: Boolean;
+    qualificationsSummary?: string;
+    qualifications: [{ name: string; grade: string; emoji?: string }];
+    useBadges: boolean;
   };
 }
 

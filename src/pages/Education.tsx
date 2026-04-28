@@ -4,6 +4,16 @@ import EducationCard from "../components/EducationCard";
 import GradImg from "../assets/mortarboard-fill.svg";
 import ImageBanner from "../components/ImageBanner";
 
+type EducationEntry = {
+  school: string;
+  year: number;
+  level: string;
+  subtitle?: string;
+  qualificationsSummary?: string;
+  qualifications: [{ name: string; grade: string; emoji?: string }];
+  useBadges: boolean;
+};
+
 const Education = () => {
   return (
     <div className="EducationPage">
@@ -11,7 +21,7 @@ const Education = () => {
       <ImageBanner imageName="gradImg" path={GradImg} />
       <div className="circleContainer">
         <div className="circle">
-          {educationData.map((entry) => (
+          {(educationData as unknown as EducationEntry[]).map((entry) => (
             <EducationCard data={entry} index={educationData.indexOf(entry)} />
           ))}
         </div>
