@@ -21,9 +21,11 @@ const Education = () => {
       <ImageBanner imageName="gradImg" path={GradImg} />
       <div className="circleContainer">
         <div className="circle">
-          {(educationData as unknown as EducationEntry[]).map((entry) => (
-            <EducationCard data={entry} index={educationData.indexOf(entry)} />
-          ))}
+          {(educationData as unknown as EducationEntry[]).map(
+            (entry, index) => (
+              <EducationCard data={entry} index={index} />
+            ),
+          )}
         </div>
       </div>
     </div>

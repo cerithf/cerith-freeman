@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import Badge from "./Badge";
-import ExpandToggle from "./ExpandToggle";
-import { DataSaverOff } from "@mui/icons-material";
 
 interface Props {
   index: number;
@@ -61,8 +59,8 @@ const EducationCard = ({ index, data }: Props) => {
         {data.useBadges ? (
           <ul className="qualifications">
             {data.qualifications.map(
-              (entry: { name: string; grade: string; emoji: string }) => (
-                <Badge>{`${entry.name} ${entry.emoji} | ${gradeDisplay(entry.grade)}`}</Badge>
+              (entry: { name: string; grade: string; emoji?: string }) => (
+                <Badge>{`${entry.name} ${entry.emoji ?? ""} | ${gradeDisplay(entry.grade)}`}</Badge>
               ),
             )}
           </ul>
