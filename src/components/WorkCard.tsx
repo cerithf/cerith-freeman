@@ -10,7 +10,7 @@ interface Props {
     company: string;
     description: string[];
     skills: {
-      string: string[];
+      [key: string]: string[];
     };
   };
 }

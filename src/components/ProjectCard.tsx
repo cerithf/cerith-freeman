@@ -8,7 +8,7 @@ interface Props {
     subtitle: string;
     date: string;
     img: string;
-    url: string;
+    url?: string;
     languages: string[];
     description: string;
   };

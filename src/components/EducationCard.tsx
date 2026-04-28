@@ -9,7 +9,7 @@ interface Props {
     school: string;
     year: number;
     level: string;
-    subtitle: string;
+    subtitle?: string;
     qualificationsSummary: string;
     qualifications: [{ name: string; grade: string; emoji: string }];
     useBadges: Boolean;
