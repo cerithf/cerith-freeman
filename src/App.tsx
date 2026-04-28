@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 // pages
 import Home from "./pages/Home";
-import Knitting from "./pages/Knitting";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Work from "./pages/Work";
