@@ -24,6 +24,10 @@ body {
     max-width: 100%;
 }
 
+.mobile-only {
+    display: none;
+}
+
 .PageContent {
     padding: 0 12px;
 }
@@ -388,6 +392,8 @@ ul.NavBar {
             left: 30px
         }
     }
+
+    // Mobile
 }
 
 // PROJECTS PAGE -----------------------------------
@@ -787,4 +793,105 @@ opacity: 40%;
         background-color: $yellow;
     }
 
+}
+
+// MOBILE VIEWPORT ---------------------------------
+
+@media(max-width: 400px) {
+    .mobile-only {
+        display: block;
+    }
+
+    .homePage {
+        #headingContainer {
+            font-size: 16px;
+            width: 100%;
+            margin: 0;
+            left: 0;
+            text-align: center;
+        }
+        #CircularText {
+            display: none;
+        }
+
+        h4.mobile-only {
+            color: white;
+            font-family: $headerFont;
+            opacity: 80%;
+            font-size: 2em;
+            font-weight: 300;
+            padding-bottom: 12px;
+            letter-spacing: 0.05em;
+
+        }
+
+        li {
+            border: none !important;
+            padding: 30px;
+        }
+        li:nth-child(2) {
+            background-color: $orange !important;
+        }
+                li:nth-child(3) {
+            background-color: $yellow !important;
+        }
+        li:nth-child(4) {
+            background-color: $purple !important;
+        }
+    }
+    
+    ul.NavBar{
+        flex-wrap: wrap;
+
+        li {
+            $bevelOpacity: 0.05;
+            min-width: 33%;
+            border-top:solid rgba(255,255,255,$bevelOpacity);
+            border-left:solid rgba(255,255,255,$bevelOpacity);
+            border-right:solid rgba(0,0,0,$bevelOpacity);
+            border-bottom:solid rgba(0,0,0,$bevelOpacity);
+        }
+
+        a {
+            padding: 8px;
+        }
+    }
+
+    .AboutPage {
+        .header {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .WorkPage {
+        .WorkCard {
+            min-width: inherit;
+        }
+    }
+
+    .ImageBanner {
+        transform: translateX(-50px);
+    }
+
+    .EducationPage {
+        .EducationCard {
+            width: 100% !important;
+
+            .cardHeader {
+                margin: 0 12px;
+                padding: 0 !important;
+                p.dateDisplay {font-size: 14px;}
+                h2 {font-size: 20px;}
+                .subtitle {font-size: 12px;}
+            }
+            .qualificationDisplay {
+                min-width: inherit;
+                max-width: inherit;
+                .qualificationName {font-size: 1em;}
+            }
+        }
+
+
+    }
 }

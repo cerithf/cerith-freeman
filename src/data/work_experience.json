@@ -33,7 +33,7 @@
     "start": 2022,
     "end": 2024,
     "role": "English Language Assistant",
-    "company": "British\u00A0Council",
+    "company": "British Council",
     "description": [
       "Two nine-month-long internships as a language assistant, teaching English as a second language to German school students first in Munich and then in Hamburg.",
       "Interacting bilingually with students of various ages and national backgrounds, including those who were fluent in neither German nor English, and relating new grammatical concepts to those they were already familiar with.",
@@ -42,19 +42,20 @@
       "Flexibly adapting to various teachers’ needs including preparing warm-ups, aiding in school trips, mediating between the German school and school groups from Spain and Italy, and delivering revision sessions for A-Level students who were studying the UK."
     ],
     "skills": {
-      "teaching and communication": [
-        "ESL instruction",
-        "Bilingual communication",
+      "teaching + communication": [
+        "ESL",
+        "Bilingual instruction",
         "Lesson planning",
         "Public speaking",
         "Presentation delivery",
-        "Differentiated instruction to varying ages & ability levels"
+        "Teaching ages & ability levels"
       ],
       "interpersonal": [
+        "Flexibility",
         "Cross-cultural communication",
-        "Flexibility and responsiveness to colleagues' needs",
         "Leading discussions",
-        "Intercultural mediation (between German, Spanish and Italian school groups)"
+        "Responsiveness to colleagues' needs",
+        "Organising school groups on trips"
       ]
     }
   },

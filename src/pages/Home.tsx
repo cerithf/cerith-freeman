@@ -3,13 +3,16 @@ import "../../src/styles/stripes.scss";
 import NavBar from "../components/NavBar";
 import CircularText from "../components/CircularText";
 
+const subtitle = "Front-end Developer";
+
 const Home = () => {
   return (
     <div className="homePage">
       <div id="headingContainer">
         <CircularText radius={26} textColour="white">
-          Front-end Developer
+          {subtitle}
         </CircularText>
+        <h4 className="mobile-only">{subtitle}</h4>
         <h1>
           Cerith
           <br />
