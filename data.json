@@ -1,0 +1,943 @@
+[
+  {
+    "name": "conversation_topics",
+    "description": "All possible conversation topics. One button per topic is on the About page. Each topic has automatic questions associated with it.",
+    "data": [
+      {
+        "en": "Introducing Yourself",
+        "cy": "Cyflwyno'ch Hun",
+        "emoji": "\ud83e\udd1d"
+      },
+      {
+        "en": "Family",
+        "cy": "Teulu",
+        "emoji": "\ud83e\uddd1\u200d\ud83e\uddd1\u200d\ud83e\uddd2\u200d\ud83e\uddd2"
+      },
+      {
+        "en": "Hobbies & Free Time",
+        "cy": "Hob\u00efau ac Amser Rhydd",
+        "emoji": "\ud83d\udd7a\ud83c\udffb"
+      },
+      {
+        "en": "Daily Routine",
+        "cy": "Trefn Ddyddiol",
+        "emoji": "\ud83d\udd01"
+      },
+      {
+        "en": "Weather",
+        "cy": "Tywydd",
+        "emoji": "\ud83c\udf24\ufe0f"
+      },
+      {
+        "en": "Food and Drink",
+        "cy": "Bwyd a Diod",
+        "emoji": "\ud83c\udf54"
+      },
+      {
+        "en": "Colours",
+        "cy": "Lliwiau",
+        "emoji": "\ud83c\udf08"
+      },
+      {
+        "en": "Clothes",
+        "cy": "Dillad",
+        "emoji": "\ud83d\udc57"
+      },
+      {
+        "en": "Numbers",
+        "cy": "Rhifau",
+        "emoji": "\ud83d\udd22"
+      },
+      {
+        "en": "Prices",
+        "cy": "Prisoedd",
+        "emoji": "\ud83d\udcb0"
+      },
+      {
+        "en": "Telling the Time",
+        "cy": "Dweud yr Amser",
+        "emoji": "\u23f0"
+      },
+      {
+        "en": "Places in Town",
+        "cy": "Llefydd yn y dre",
+        "emoji": "\ud83c\udfdb\ufe0f"
+      },
+      {
+        "en": "Countries & Travel",
+        "cy": "Gwledydd a Theithio",
+        "emoji": "\ud83e\uddf3"
+      }
+    ]
+  },
+  {
+    "name": "topic_questions",
+    "description": "Automatically generated questions to start a conversation, matching up to each of the topics in conversation_topics.",
+    "data": [
+      {
+        "topic": "Clothes",
+        "cy": "Beth dych chi'n wisgo heddiw?",
+        "en": "What are you wearing today?"
+      },
+      {
+        "topic": "Clothes",
+        "cy": "Pa ddillad dych chi'n wisgo yn y gaeaf?",
+        "en": "What clothes do you wear in winter?"
+      },
+      {
+        "topic": "Clothes",
+        "cy": "Pa faint dych chi'n wisgo?",
+        "en": "What size do you wear?"
+      },
+      {
+        "topic": "Clothes",
+        "cy": "Dych chi'n hoffi esgidiau sodlau uchel?",
+        "en": "Do you like high-heeled shoes?"
+      },
+      {
+        "topic": "Clothes",
+        "cy": "Pa fath o esgidiau wyt ti\u2019n hoffi?",
+        "en": "What kind of shoes do you like?"
+      },
+      {
+        "topic": "Clothes",
+        "cy": "Wyt ti\u2019n hoffi siopa dillad?",
+        "en": "Do you like clothes shopping?"
+      },
+      {
+        "topic": "Clothes",
+        "cy": "Beth wyt ti'n gwisgo heddiw?",
+        "en": "What are you wearing today?"
+      },
+      {
+        "topic": "Clothes",
+        "cy": "Beth dych chi'n wisgo i'r gwaith?",
+        "en": "What do you wear to work?"
+      },
+      {
+        "topic": "Clothes",
+        "cy": "Oes siwt gyda chi?",
+        "en": "Do you have a suit?"
+      },
+      {
+        "topic": "Clothes",
+        "cy": "Pa fath o ddillad dych chi'n hoffi?",
+        "en": "What kind of clothes do you like?"
+      },
+      {
+        "topic": "Clothes",
+        "cy": "Dych chi'n hoffi siopa am ddillad?",
+        "en": "Do you like shopping for clothes?"
+      },
+      {
+        "topic": "Clothes",
+        "cy": "Dych chi'n hoffi het?",
+        "en": "Do you like wearing hats?"
+      },
+      {
+        "topic": "Clothes",
+        "cy": "Ble dych chi'n prynu eich dillad?",
+        "en": "Where do you buy your clothes?"
+      },
+      {
+        "topic": "Colours",
+        "cy": "Ydych chi\u2019n gwisgo dillad lliwgar?",
+        "en": "Do you wear colourful clothes?"
+      },
+      {
+        "topic": "Colours",
+        "cy": "Pa liw yw eich hoff liw?",
+        "en": "What colour is your favourite colour?"
+      },
+      {
+        "topic": "Colours",
+        "cy": "Pa liw yw eich car?",
+        "en": "What colour is your car?"
+      },
+      {
+        "topic": "Colours",
+        "cy": "Pa liw yw eich llygaid?",
+        "en": "What colour are your eyes?"
+      },
+      {
+        "topic": "Colours",
+        "cy": "Dych chi'n hoffi lliwiau llachar?",
+        "en": "Do you like bright colours?"
+      },
+      {
+        "topic": "Colours",
+        "cy": "Pa liw yw'r awyr heddiw?",
+        "en": "What colour is the sky today?"
+      },
+      {
+        "topic": "Colours",
+        "cy": "Beth yw lliw dy lygaid?",
+        "en": "What colour are your eyes?"
+      },
+      {
+        "topic": "Colours",
+        "cy": "Pa liw yw eich gwallt?",
+        "en": "What colour is your hair?"
+      },
+      {
+        "topic": "Colours",
+        "cy": "Pa liw dillad dych chi'n gwisgo heddiw?",
+        "en": "What colour clothes are you wearing today?"
+      },
+      {
+        "topic": "Colours",
+        "cy": "Dych chi'n hoffi du neu wyn?",
+        "en": "Do you prefer black or white?"
+      },
+      {
+        "topic": "Colours",
+        "cy": "Pa liw yw eich t\u0177?",
+        "en": "What colour is your house?"
+      },
+      {
+        "topic": "Colours",
+        "cy": "Pa liw blodau dych chi'n hoffi?",
+        "en": "What colour flowers do you like?"
+      },
+      {
+        "topic": "Colours",
+        "cy": "Pa liw wyt ti'n hoffi fwyaf?",
+        "en": "What\u2019s your favourite colour?"
+      },
+      {
+        "topic": "Countries & Travel",
+        "cy": "Pa wlad wyt ti eisiau ymweld \u00e2 hi?",
+        "en": "Which country do you want to visit?"
+      },
+      {
+        "topic": "Countries & Travel",
+        "cy": "Ble wyt ti\u2019n mynd ar wyliau?",
+        "en": "Where do you go on holiday?"
+      },
+      {
+        "topic": "Countries & Travel",
+        "cy": "Beth yw'r pellaf dych chi wedi teithio?",
+        "en": "What's the furthest you have travelled?"
+      },
+      {
+        "topic": "Countries & Travel",
+        "cy": "Wyt ti wedi teithio i wlad arall?",
+        "en": "Have you travelled to another country?"
+      },
+      {
+        "topic": "Countries & Travel",
+        "cy": "Dych chi'n hoffi teithio ar eich pen eich hun?",
+        "en": "Do you like travelling alone?"
+      },
+      {
+        "topic": "Countries & Travel",
+        "cy": "Dych chi wedi bod i Ffrainc?",
+        "en": "Have you been to France?"
+      },
+      {
+        "topic": "Countries & Travel",
+        "cy": "O ba wlad dych chi'n dod?",
+        "en": "What country do you come from?"
+      },
+      {
+        "topic": "Countries & Travel",
+        "cy": "Dych chi wedi byw mewn gwlad arall?",
+        "en": "Have you lived in another country?"
+      },
+      {
+        "topic": "Countries & Travel",
+        "cy": "Pa wlad yw eich ffefryn?",
+        "en": "What country is your favourite?"
+      },
+      {
+        "topic": "Countries & Travel",
+        "cy": "Ble aethoch chi ar eich gwyliau diwethaf?",
+        "en": "Where did you go on your last holiday?"
+      },
+      {
+        "topic": "Countries & Travel",
+        "cy": "Dych chi'n siarad ieithoedd eraill?",
+        "en": "Do you speak other languages?"
+      },
+      {
+        "topic": "Countries & Travel",
+        "cy": "Pa wledydd hoffech chi ymweld \u00e2 nhw?",
+        "en": "What countries would you like to visit?"
+      },
+      {
+        "topic": "Countries & Travel",
+        "cy": "Sut dych chi'n hoffi teithio?",
+        "en": "How do you like to travel?"
+      },
+      {
+        "topic": "Daily Routine",
+        "cy": "Dych chi'n cymryd cawod yn y bore neu'r nos?",
+        "en": "Do you take a shower in the morning or evening?"
+      },
+      {
+        "topic": "Daily Routine",
+        "cy": "Pryd dych chi'n mynd i'r gwely?",
+        "en": "When do you go to bed?"
+      },
+      {
+        "topic": "Daily Routine",
+        "cy": "Dych chi'n gwylio'r newyddion bob dydd?",
+        "en": "Do you watch the news every day?"
+      },
+      {
+        "topic": "Daily Routine",
+        "cy": "Beth yw'r peth cyntaf dych chi'n wneud yn y bore?",
+        "en": "What's the first thing you do in the morning?"
+      },
+      {
+        "topic": "Daily Routine",
+        "cy": "Beth dych chi'n wneud ar \u00f4l gwaith?",
+        "en": "What do you do after work?"
+      },
+      {
+        "topic": "Daily Routine",
+        "cy": "Dych chi'n ymarfer corff yn rheolaidd?",
+        "en": "Do you exercise regularly?"
+      },
+      {
+        "topic": "Daily Routine",
+        "cy": "Pryd dych chi'n codi yn y bore?",
+        "en": "When do you get up in the morning?"
+      },
+      {
+        "topic": "Daily Routine",
+        "cy": "Beth dych chi'n fwyta i frecwast?",
+        "en": "What do you eat for breakfast?"
+      },
+      {
+        "topic": "Daily Routine",
+        "cy": "Pa bryd dych chi'n bwyta cinio?",
+        "en": "When do you eat lunch?"
+      },
+      {
+        "topic": "Daily Routine",
+        "cy": "Pryd dych chi'n mynd i'r gwaith?",
+        "en": "When do you go to work?"
+      },
+      {
+        "topic": "Daily Routine",
+        "cy": "Wyt ti'n mynd i'r ysgol neu'r gwaith?",
+        "en": "Do you go to school or work?"
+      },
+      {
+        "topic": "Daily Routine",
+        "cy": "Beth wyt ti'n gwneud yn y bore?",
+        "en": "What do you do in the morning?"
+      },
+      {
+        "topic": "Daily Routine",
+        "cy": "Faint o\u2019r gloch wyt ti\u2019n deffro?",
+        "en": "What time do you wake up?"
+      },
+      {
+        "topic": "Family",
+        "cy": "Sawl person sydd yn dy deulu di?",
+        "en": "How many people are in your family?"
+      },
+      {
+        "topic": "Family",
+        "cy": "Oes gen ti frawd neu chwaer?",
+        "en": "Do you have a brother or sister?"
+      },
+      {
+        "topic": "Family",
+        "cy": "Oes anifeiliaid anwes gyda chi?",
+        "en": "Do you have pets?"
+      },
+      {
+        "topic": "Family",
+        "cy": "Dych chi'n agos at eich teulu?",
+        "en": "Are you close to your family?"
+      },
+      {
+        "topic": "Family",
+        "cy": "Beth mae eich partner yn wneud?",
+        "en": "What does your partner do?"
+      },
+      {
+        "topic": "Family",
+        "cy": "Oes gen ti anifail anwes?",
+        "en": "Do you have a pet?"
+      },
+      {
+        "topic": "Family",
+        "cy": "Oes nain a taid gyda chi?",
+        "en": "Do you have grandparents?"
+      },
+      {
+        "topic": "Family",
+        "cy": "Dych chi'n byw gyda'ch rhieni?",
+        "en": "Do you live with your parents?"
+      },
+      {
+        "topic": "Family",
+        "cy": "Ble mae eich tad yn gweithio?",
+        "en": "Where does your father work?"
+      },
+      {
+        "topic": "Family",
+        "cy": "Beth yw enw eich mam?",
+        "en": "What is your mother's name?"
+      },
+      {
+        "topic": "Family",
+        "cy": "Faint o blant sydd gyda chi?",
+        "en": "How many children do you have?"
+      },
+      {
+        "topic": "Family",
+        "cy": "Faint yw oed eich plant?",
+        "en": "How old are your children?"
+      },
+      {
+        "topic": "Family",
+        "cy": "Oes brawd neu chwaer gyda chi?",
+        "en": "Do you have a brother or sister?"
+      },
+      {
+        "topic": "Food and Drink",
+        "cy": "Pa lysiau dych chi'n hoffi?",
+        "en": "What vegetables do you like?"
+      },
+      {
+        "topic": "Food and Drink",
+        "cy": "Dych chi'n mynd i fwytai'n aml?",
+        "en": "Do you go to restaurants often?"
+      },
+      {
+        "topic": "Food and Drink",
+        "cy": "Beth yw eich pryd gorau o'r dydd?",
+        "en": "What is your best meal of the day?"
+      },
+      {
+        "topic": "Food and Drink",
+        "cy": "Dych chi'n bwyta cig?",
+        "en": "Do you eat meat?"
+      },
+      {
+        "topic": "Food and Drink",
+        "cy": "Dych chi'n hoffi siocled?",
+        "en": "Do you like chocolate?"
+      },
+      {
+        "topic": "Food and Drink",
+        "cy": "Pa fath o goffi dych chi'n hoffi?",
+        "en": "What kind of coffee do you like?"
+      },
+      {
+        "topic": "Food and Drink",
+        "cy": "Dych chi'n gallu coginio?",
+        "en": "Can you cook?"
+      },
+      {
+        "topic": "Food and Drink",
+        "cy": "Beth dych chi'n yfed gyda'ch bwyd?",
+        "en": "What do you drink with your food?"
+      },
+      {
+        "topic": "Food and Drink",
+        "cy": "Beth yw eich hoff fwyd?",
+        "en": "What is your favourite food?"
+      },
+      {
+        "topic": "Food and Drink",
+        "cy": "Dych chi'n hoffi bwyd poeth?",
+        "en": "Do you like spicy food?"
+      },
+      {
+        "topic": "Food and Drink",
+        "cy": "Beth wyt ti\u2019n cael i frecwast fel arfer?",
+        "en": "What do you usually have for breakfast?"
+      },
+      {
+        "topic": "Food and Drink",
+        "cy": "Wyt ti\u2019n hoffi coffi neu de?",
+        "en": "Do you like coffee or tea?"
+      },
+      {
+        "topic": "Food and Drink",
+        "cy": "Beth wyt ti'n hoffi bwyta?",
+        "en": "What do you like to eat?"
+      },
+      {
+        "topic": "Hobbies & Free Time",
+        "cy": "Wyt ti'n darllen llyfrau?",
+        "en": "Do you read books?"
+      },
+      {
+        "topic": "Hobbies & Free Time",
+        "cy": "Wyt ti'n chwarae unrhyw chwaraeon?",
+        "en": "Do you play any sports?"
+      },
+      {
+        "topic": "Hobbies & Free Time",
+        "cy": "Beth wyt ti'n hoffi wneud yn dy amser hamdden?",
+        "en": "What do you like to do in your free time?"
+      },
+      {
+        "topic": "Hobbies & Free Time",
+        "cy": "Dych chi'n hoffi garddio?",
+        "en": "Do you like gardening?"
+      },
+      {
+        "topic": "Hobbies & Free Time",
+        "cy": "Beth dych chi'n wneud ar y penwythnos?",
+        "en": "What do you do at the weekend?"
+      },
+      {
+        "topic": "Hobbies & Free Time",
+        "cy": "Pa fath o gerddoriaeth dych chi'n hoffi?",
+        "en": "What kind of music do you like?"
+      },
+      {
+        "topic": "Hobbies & Free Time",
+        "cy": "Dych chi'n darllen llawer?",
+        "en": "Do you read a lot?"
+      },
+      {
+        "topic": "Hobbies & Free Time",
+        "cy": "Oes hobi arbennig gyda chi?",
+        "en": "Do you have a special hobby?"
+      },
+      {
+        "topic": "Hobbies & Free Time",
+        "cy": "Dych chi'n hoffi coginio?",
+        "en": "Do you like cooking?"
+      },
+      {
+        "topic": "Hobbies & Free Time",
+        "cy": "Pa raglenni teledu dych chi'n hoffi?",
+        "en": "What TV programmes do you like?"
+      },
+      {
+        "topic": "Hobbies & Free Time",
+        "cy": "Dych chi'n mynd i'r sinema'n aml?",
+        "en": "Do you go to the cinema often?"
+      },
+      {
+        "topic": "Hobbies & Free Time",
+        "cy": "Dych chi'n hoffi chwaraeon?",
+        "en": "Do you like sports?"
+      },
+      {
+        "topic": "Hobbies & Free Time",
+        "cy": "Beth dych chi'n hoffi wneud yn eich amser rhydd?",
+        "en": "What do you like to do in your free time?"
+      },
+      {
+        "topic": "Introducing Yourself",
+        "cy": "Beth yw dy enw di?",
+        "en": "What\u2019s your name?"
+      },
+      {
+        "topic": "Introducing Yourself",
+        "cy": "O ble dych chi'n dod?",
+        "en": "Where do you come from?"
+      },
+      {
+        "topic": "Introducing Yourself",
+        "cy": "Beth yw eich enw chi?",
+        "en": "What is your name?"
+      },
+      {
+        "topic": "Introducing Yourself",
+        "cy": "Faint yw eich oed chi?",
+        "en": "How old are you?"
+      },
+      {
+        "topic": "Introducing Yourself",
+        "cy": "Ble dych chi'n byw?",
+        "en": "Where do you live?"
+      },
+      {
+        "topic": "Introducing Yourself",
+        "cy": "Beth yw eich gwaith chi?",
+        "en": "What is your job?"
+      },
+      {
+        "topic": "Introducing Yourself",
+        "cy": "Dych chi'n siarad Cymraeg?",
+        "en": "Do you speak Welsh?"
+      },
+      {
+        "topic": "Introducing Yourself",
+        "cy": "Dych chi'n briod?",
+        "en": "Are you married?"
+      },
+      {
+        "topic": "Introducing Yourself",
+        "cy": "Beth yw eich cyfenw chi?",
+        "en": "What is your surname?"
+      },
+      {
+        "topic": "Introducing Yourself",
+        "cy": "Oes plant gyda chi?",
+        "en": "Do you have children?"
+      },
+      {
+        "topic": "Introducing Yourself",
+        "cy": "Wyt ti'n dysgu Cymraeg?",
+        "en": "Are you learning Welsh?"
+      },
+      {
+        "topic": "Introducing Yourself",
+        "cy": "Faint ydy dy oed di?",
+        "en": "How old are you?"
+      },
+      {
+        "topic": "Introducing Yourself",
+        "cy": "O ble wyt ti'n dod?",
+        "en": "Where are you from?"
+      },
+      {
+        "topic": "Introducing Yourself",
+        "cy": "Pryd dych chi'n pen-blwydd?",
+        "en": "When is your birthday?"
+      },
+      {
+        "topic": "Numbers",
+        "cy": "Faint yw un a dau?",
+        "en": "What is one plus two?"
+      },
+      {
+        "topic": "Numbers",
+        "cy": "Pa oed fyddwch chi flwyddyn nesaf?",
+        "en": "What age will you be next year?"
+      },
+      {
+        "topic": "Numbers",
+        "cy": "Pa rif yw eich ffefryn?",
+        "en": "What number is your favourite?"
+      },
+      {
+        "topic": "Numbers",
+        "cy": "Faint o frodyr a chwiorydd sydd gyda chi?",
+        "en": "How many brothers and sisters do you have?"
+      },
+      {
+        "topic": "Numbers",
+        "cy": "Pa rif yw eich t\u0177?",
+        "en": "What number is your house?"
+      },
+      {
+        "topic": "Numbers",
+        "cy": "Beth yw'r flwyddyn eleni?",
+        "en": "What year is it?"
+      },
+      {
+        "topic": "Numbers",
+        "cy": "Pa rif ff\u00f4n sydd gyda chi?",
+        "en": "What phone number do you have?"
+      },
+      {
+        "topic": "Numbers",
+        "cy": "Faint yw dau ddeg a phump?",
+        "en": "What is twenty plus five?"
+      },
+      {
+        "topic": "Numbers",
+        "cy": "Beth yw pump deg dau wedi'i adio at saith deg naw?",
+        "en": "What is fifty-two added to seventy-nine?"
+      },
+      {
+        "topic": "Numbers",
+        "cy": "Pa flwyddyn gawsoch chi eich geni?",
+        "en": "What year were you born?"
+      },
+      {
+        "topic": "Numbers",
+        "cy": "Faint o geir sydd gyda chi?",
+        "en": "How many cars do you have?"
+      },
+      {
+        "topic": "Numbers",
+        "cy": "Elli di gyfri o un i ddeg?",
+        "en": "Can you count from one to ten?"
+      },
+      {
+        "topic": "Numbers",
+        "cy": "Faint o bobl sy'n byw yn eich t\u0177?",
+        "en": "How many people live in your house?"
+      },
+      {
+        "topic": "Places in Town",
+        "cy": "Oes siop lyfrau yn y dref?",
+        "en": "Is there a bookshop in town?"
+      },
+      {
+        "topic": "Places in Town",
+        "cy": "Sut mae mynd i'r ysbyty?",
+        "en": "How do you get to the hospital?"
+      },
+      {
+        "topic": "Places in Town",
+        "cy": "Ble gallwn ni brynu bara?",
+        "en": "Where can we buy bread?"
+      },
+      {
+        "topic": "Places in Town",
+        "cy": "Ydy'r post yn agos?",
+        "en": "Is the post office near?"
+      },
+      {
+        "topic": "Places in Town",
+        "cy": "Oes sinema yn y dref?",
+        "en": "Is there a cinema in town?"
+      },
+      {
+        "topic": "Places in Town",
+        "cy": "Ble mae'r orsaf drenau?",
+        "en": "Where is the train station?"
+      },
+      {
+        "topic": "Places in Town",
+        "cy": "Dych chi'n gwybod ble mae'r llyfrgell?",
+        "en": "Do you know where the library is?"
+      },
+      {
+        "topic": "Places in Town",
+        "cy": "Ble mae'r banc?",
+        "en": "Where is the bank?"
+      },
+      {
+        "topic": "Places in Town",
+        "cy": "Pa mor bell yw'r ganolfan siopa?",
+        "en": "How far is the shopping centre?"
+      },
+      {
+        "topic": "Places in Town",
+        "cy": "Ble mae\u2019r siop fwyaf?",
+        "en": "Where is the biggest shop?"
+      },
+      {
+        "topic": "Places in Town",
+        "cy": "Wyt ti\u2019n mynd i\u2019r parc?",
+        "en": "Do you go to the park?"
+      },
+      {
+        "topic": "Places in Town",
+        "cy": "Ble mae\u2019r llyfrgell?",
+        "en": "Where is the library?"
+      },
+      {
+        "topic": "Places in Town",
+        "cy": "Oes caffi da yma?",
+        "en": "Is there a good caf\u00e9 here?"
+      },
+      {
+        "topic": "Prices",
+        "cy": "Faint ydy hwn?",
+        "en": "How much is this?"
+      },
+      {
+        "topic": "Prices",
+        "cy": "Oes pris gwell gyda chi?",
+        "en": "Do you have a better price?"
+      },
+      {
+        "topic": "Prices",
+        "cy": "Faint yw'r rent bob mis?",
+        "en": "How much is the rent per month?"
+      },
+      {
+        "topic": "Prices",
+        "cy": "Allwch chi roi gostyngiad i mi?",
+        "en": "Can you give me a reduction?"
+      },
+      {
+        "topic": "Prices",
+        "cy": "Faint mae tocyn yn costio?",
+        "en": "How much does a ticket cost?"
+      },
+      {
+        "topic": "Prices",
+        "cy": "Faint mae hwn yn costio?",
+        "en": "How much does this cost?"
+      },
+      {
+        "topic": "Prices",
+        "cy": "Faint yw'r bil?",
+        "en": "How much is the bill?"
+      },
+      {
+        "topic": "Prices",
+        "cy": "Oes disgownt ar gael?",
+        "en": "Is there a discount available?"
+      },
+      {
+        "topic": "Prices",
+        "cy": "Faint daloch chi am eich car?",
+        "en": "How much did you pay for your car?"
+      },
+      {
+        "topic": "Prices",
+        "cy": "Faint ydy\u2019r coffi?",
+        "en": "How much is the coffee?"
+      },
+      {
+        "topic": "Prices",
+        "cy": "Ydy\u2019r siop yn ddrud?",
+        "en": "Is the shop expensive?"
+      },
+      {
+        "topic": "Prices",
+        "cy": "Ydy e'n ddrud?",
+        "en": "Is it expensive?"
+      },
+      {
+        "topic": "Prices",
+        "cy": "Dych chi'n meddwl bod hyn yn rhad?",
+        "en": "Do you think this is cheap?"
+      },
+      {
+        "topic": "Telling the Time",
+        "cy": "Faint o\u2019r gloch ydy hi?",
+        "en": "What time is it?"
+      },
+      {
+        "topic": "Telling the Time",
+        "cy": "Ydy hi\u2019n amser cinio eto?",
+        "en": "Is it lunchtime yet?"
+      },
+      {
+        "topic": "Telling the Time",
+        "cy": "Faint o\u2019r gloch wyt ti'n mynd i'r ysgol?",
+        "en": "What time do you go to school?"
+      },
+      {
+        "topic": "Telling the Time",
+        "cy": "Faint o'r gloch mae'r tr\u00ean yn gadael?",
+        "en": "What time does the train leave?"
+      },
+      {
+        "topic": "Telling the Time",
+        "cy": "Pa bryd dych chi'n gorffen gwaith?",
+        "en": "What time do you finish work?"
+      },
+      {
+        "topic": "Telling the Time",
+        "cy": "Am faint o'r gloch mae'r siop yn cau?",
+        "en": "What time does the shop close?"
+      },
+      {
+        "topic": "Telling the Time",
+        "cy": "Pryd mae'r cyfarfod?",
+        "en": "When is the meeting?"
+      },
+      {
+        "topic": "Telling the Time",
+        "cy": "Faint o amser sydd gyda ni?",
+        "en": "How much time do we have?"
+      },
+      {
+        "topic": "Telling the Time",
+        "cy": "Am faint o'r gloch dych chi'n codi?",
+        "en": "What time do you get up?"
+      },
+      {
+        "topic": "Telling the Time",
+        "cy": "Pryd mae'r bws yn dod?",
+        "en": "When does the bus come?"
+      },
+      {
+        "topic": "Telling the Time",
+        "cy": "Faint o'r gloch yw hi?",
+        "en": "What time is it?"
+      },
+      {
+        "topic": "Telling the Time",
+        "cy": "Dych chi'n hwyr?",
+        "en": "Are you late?"
+      },
+      {
+        "topic": "Telling the Time",
+        "cy": "Ydy'r cloc yn gywir?",
+        "en": "Is the clock correct?"
+      },
+      {
+        "topic": "Weather",
+        "cy": "Ydy hi\u2019n bwrw glaw?",
+        "en": "Is it raining?"
+      },
+      {
+        "topic": "Weather",
+        "cy": "Pa dywydd wyt ti\u2019n hoffi?",
+        "en": "What kind of weather do you like?"
+      },
+      {
+        "topic": "Weather",
+        "cy": "Sut mae\u2019r tywydd heddiw?",
+        "en": "How\u2019s the weather today?"
+      },
+      {
+        "topic": "Weather",
+        "cy": "Pryd mae hi'n bwrw glaw fel arfer?",
+        "en": "When does it usually rain?"
+      },
+      {
+        "topic": "Weather",
+        "cy": "Sut mae'r tywydd heddiw?",
+        "en": "How's the weather today?"
+      },
+      {
+        "topic": "Weather",
+        "cy": "Ydy hi'n bwrw glaw?",
+        "en": "Is it raining?"
+      },
+      {
+        "topic": "Weather",
+        "cy": "Ydy hi'n oer?",
+        "en": "Is it cold?"
+      },
+      {
+        "topic": "Weather",
+        "cy": "Pa fath o dywydd dych chi'n hoffi?",
+        "en": "What kind of weather do you like?"
+      },
+      {
+        "topic": "Weather",
+        "cy": "Oes eira yn disgyn?",
+        "en": "Is it snowing?"
+      },
+      {
+        "topic": "Weather",
+        "cy": "Ydy hi'n wyntog?",
+        "en": "Is it windy?"
+      },
+      {
+        "topic": "Weather",
+        "cy": "Pa mor gynnes yw hi?",
+        "en": "How warm is it?"
+      },
+      {
+        "topic": "Weather",
+        "cy": "Dych chi'n hoffi'r gaeaf neu'r haf?",
+        "en": "Do you prefer winter or summer?"
+      },
+      {
+        "topic": "Weather",
+        "cy": "Ydy hi'n braf heddiw?",
+        "en": "Is it nice today?"
+      }
+    ]
+  },
+  {
+    "name": "text",
+    "description": "Text-based descriptions",
+    "data": [
+      {
+        "name": "about_page_en",
+        "text": "Welcome to Wrth Sgwrs\n                \n    Wrth Sgwrs is a resource to help you practise speaking Welsh in a simple, accessible way. You can use the app to have short conversations with an AI in Welsh, giving you a chance to try out everyday language and build your confidence speaking Welsh.\n\n    There are grammar resources available to help you check your understanding and make sure what you're learning is accurate. If you need to check a word or phrase quickly, there\u2019s also a quick translate option. Please remember that AI responses and translations aren\u2019t always perfect, and this app isn\u2019t a replacement for real conversations \u2014 it\u2019s here to support your learning by giving you another opportunity to practise."
+      },
+      {
+        "name": "about_page_cy",
+        "text": "Croeso i Wrth Sgwrs\n                \n    Mae Wrth Sgwrs yn adnodd i dy helpu di ymarfer siarad Cymraeg mewn ffordd syml ac anffurfiol. Elli di ddefnyddio'r ap i gael sgyrsiau byr gyda AI yn Gymraeg er mwyn ymarfer defnyddio iaith bob dydd a chryfhau dy hyder wrth ddefnyddio'r Gymraeg.\n                    \n    Mae adnoddau gramadegol ar gael i ti wirio dy ddealltwriaeth a sicrhau cywirdeb yn beth rwyt ti'n ei ddysgu. Hefyd, mae cyfieithydd cyflym yma i ti gyfieithu gair neu frawddeg yn glou. Cofia nad yw atebion na chyfieithiadau AI yn berffaith bob tro, ac nid modd yr ap hon yw disodli sgyrsiau go iawn \u2013 mae hi yma i gefnogi dy ddysgu gan roi cyfle i ti i ymarfer."
+      }
+    ]
+  }
+]

@@ -1,0 +1,191 @@
+@import "./_variables";
+
+/* STRIPES & HOMEPAGE STYLING */
+
+/* Stripes */
+
+.stripe-group-1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    width: 2000px;
+    left: -500px;
+    height: 150px;
+    transform: rotate(-25deg);
+    z-index: 0;
+}
+
+.stripe-group-2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 160px;
+    width: 2000px;
+    left: 0px;
+    height: 100px;
+    transform: rotate(-25deg);
+    z-index: 0;
+}
+
+.stripe-group-1 > div, .stripe-group-2 > div {
+    flex: 1 1 0;
+}
+
+#stripe-1, #stripe-5 {
+    background-color: $pink;
+}
+
+#stripe-2, #stripe-4 {
+    background-color: $orange;
+}
+
+#stripe-3 {
+    background-color: $yellow;
+}
+
+#stripe-6 {
+    background-color: $purple;
+}
+
+/* Other Homepage */
+
+html:has(div.homePage) {
+    overflow: hidden;
+}
+
+.homePage #headingContainer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+    font-size: 1.8em;
+    padding: 0;
+    margin: 0;
+    
+    h1 {
+        font-weight: $heavyFont;
+        line-height: 100%;
+        font-size: 6em;
+    }
+
+    #CircularText {
+        path {visibility: hidden;}
+        position: relative;
+        left: 80px;
+        top: 370px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        opacity: 60%;
+        font-size: 0.35em;
+        transform: rotate(35deg);
+        font-family: $headerFont;
+        flex: 0 0 1;
+        float: right;
+        animation: CircularTextAnimation 10s linear infinite;
+    }
+}
+
+.homePage.NavBar {
+    position: absolute;
+    top: 64px;
+    right: 64px;
+    z-index: 2;
+    flex-direction: column;
+    li {
+        background-color: $pink;
+        width: 300px;
+
+        a {
+            font-size:  2em;
+            padding: 0.33em;
+        }
+    }
+}
+
+// Animation 
+
+@keyframes CircularTextAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Smaller Viewport */
+
+@media (max-width: 600px) {
+.homePage.NavBar {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    li {
+        flex: 1 1 0;
+        width: 100%;
+    }
+
+}
+
+.stripe-group-1 {
+    display: none;
+}
+
+// Tiny viewport
+
+@media(max-height: 600px) {
+    .homePage.NavBar {
+        display: none;
+    }
+
+    #CircularText {
+        position: relative;
+        top: 290px !important;
+        left: 60px !important;
+    }
+}
+
+}
+
+// Short + wide viewport
+
+@media(max-height: 400px) {
+    .stripes, #CircularText {
+        display: none;
+    }
+
+    .homePage.NavBar {
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 40%;
+
+        li, a{
+            width: 100%
+        }
+    }
+
+    @media (max-width: 1000px) {
+        #CircularText {
+            display: block;
+        }
+
+        .homePage #headingContainer h1 {
+            font-size: 4em;
+        }
+    }
+
+    @media(max-width: 730px) {
+    .homePage.NavBar {
+       width: 28%;
+    }
+}
+}

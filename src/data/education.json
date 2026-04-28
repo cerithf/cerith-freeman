@@ -1,0 +1,66 @@
+[
+  {
+    "school": "Ysgol Gyfun Gymraeg Glantaf",
+    "year": 2016,
+    "level": "GCSEs",
+    "qualificationsSummary": "14 A*s at GCSE, including Maths, English & Welsh",
+    "qualifications": [
+      { "name": "Welsh Lit", "grade": "A*", "emoji": "🏴󠁧󠁢󠁷󠁬󠁳󠁿" },
+      { "name": "Welsh Language", "grade": "A*", "emoji": "🏴󠁧󠁢󠁷󠁬󠁳󠁿" },
+      { "name": "English Lit", "grade": "A*", "emoji": "🇬🇧" },
+      { "name": "English Language", "grade": "A*", "emoji": "🇬🇧" },
+      { "name": "Maths (Methods)", "grade": "A*", "emoji": "🔢" },
+      { "name": "Maths (Applications)", "grade": "A*", "emoji": "🔢" },
+      { "name": "Biology", "grade": "A*", "emoji": "🧫" },
+      { "name": "Chemistry", "grade": "A*", "emoji": "🧪" },
+      { "name": "Physics", "grade": "A*", "emoji": "🪐" },
+      { "name": "Religious Education", "grade": "A*", "emoji": "🛐" },
+      { "name": "History", "grade": "A*", "emoji": "🕰️" },
+      { "name": "Music", "grade": "A*", "emoji": "🎶" },
+      { "name": "Drama", "grade": "A*", "emoji": "🎭" },
+      { "name": "German", "grade": "A*", "emoji": "🇩🇪" }
+    ],
+    "useBadges": true
+  },
+  {
+    "school": "St David's Catholic\u00A0College",
+    "year": 2018,
+    "level": "A-Levels + BTEC",
+    "qualificationsSummary": "A*–A at A-Level, Double Distinction* for BTEC",
+    "qualifications": [
+      { "name": "English Literature", "grade": "A", "emoji": "📚" },
+      { "name": "German", "grade": "A*", "emoji": "🇩🇪" },
+      {
+        "name": "Performing Arts",
+        "grade": "Double Distinction*",
+        "emoji": "🎭"
+      }
+    ],
+    "useBadges": true
+  },
+  {
+    "school": "Bird College",
+    "subtitle": "Accredited by the University of Greenwich",
+    "year": 2021,
+    "level": "BA (Hons)",
+    "qualifications": [
+      {
+        "name": "Professional Dance & Musical Theatre",
+        "grade": "First Class Honours"
+      }
+    ],
+    "useBadges": false
+  },
+  {
+    "school": "Queen Mary University of\u00A0London",
+    "year": 2025,
+    "level": "MSc",
+    "qualifications": [
+      {
+        "name": "Computer & Information Systems (Conversion)",
+        "grade": "Distinction"
+      }
+    ],
+    "useBadges": false
+  }
+]

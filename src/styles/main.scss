@@ -1,0 +1,790 @@
+@import "./_variables";
+
+// GENERAL
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+html, body, #root, .App {
+  min-height: 100vh;
+  background-color: $blue;
+  overflow-x: hidden;
+}
+
+body {
+    font-family: $bodyFont;
+    font-weight: 100;
+    max-width: 100%;
+}
+
+.PageContent {
+    padding: 0 12px;
+}
+
+strong {
+    font-family: $headerFont;
+}
+
+h1 {
+    font-family: $headerFont;
+    color: white;
+    font-size: 5em;
+}
+
+h1.PageTitle {
+    text-align: center;
+    padding: 48px;
+    font-size: 5em;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+font-size: 1em;
+}
+
+.white-filter { // turns SVGs white
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(144deg) brightness(104%) contrast(101%);
+}
+
+p.dateDisplay {
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+    opacity: 60%;
+    font-weight: 300;
+}
+
+.card {
+    background-color: white;
+    margin: 12px;
+    padding: 18px;
+    border-radius: 6px;
+    flex: 1 1 0;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background-color: rgb(219, 219, 219);
+    color: black !important;
+    font-weight: 400 !important;
+    border-radius: 4px;
+    margin: 1px 4px;
+}
+
+.color-white {
+    color: white !important;
+}
+
+.color-black {
+    color: black !important;
+}
+
+// EXPAND TOGGLE
+
+.ExpandToggle  {
+
+    padding: 8px;
+    border-radius: 8px;
+    
+    strong {
+        font-family: $bodyFont;
+    }
+
+    span.expandToggleHeader {
+        display: flex;
+        align-items: center;
+    }
+
+    h3 {
+        position: relative;
+        top: 3px;
+        padding-left: 4px;
+        font-family: $headerFont;
+    }
+
+    button {
+        color: $orange;
+        background-color: $orange;
+        border: none;
+        font-weight: bold;
+        font-size: 1.5em;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        padding: 0px;
+        margin-right: 3px;
+    }
+
+    .content.expanded {
+        animation: none;
+        display: block;
+        animation: expandAnimation 0.2s linear 1 forwards;
+    }
+
+    .content.hidden {
+        animation: collapseAnimation 0.25s linear 1 forwards;
+    }
+
+    .ChevronImg {
+        position: relative;
+        width: 22px;
+        top: -5.5px;
+        left: 0px;
+        transition: transform 0.6s;
+    }
+
+    .ChevronImg.open {
+        transform: rotate(90deg);
+        left: 0px;
+        top: -5.5px;
+    }
+
+    @keyframes collapseAnimation {
+        from {
+            display:block;
+            opacity: 100%;
+        }
+
+        to {
+            opacity: 0%;
+            display: none;
+        }
+    }
+
+    @keyframes expandAnimation {
+        from {
+            opacity: 0%;
+            display: none;
+        }
+        to {
+            display:block;
+            opacity: 100%;
+        }
+
+
+    }
+}
+
+// NAV BAR
+
+ul.NavBar {
+    list-style: none;
+    display: flex;
+    background-color: $red;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+
+    li {
+        display: flex;
+        font-family: $headerFont;
+        letter-spacing: 0.1em;
+        flex: 1 1 0;
+        justify-content: center;
+    }
+
+    li:hover {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    li.active {
+        background-color: $purple;
+    }
+
+    a {
+        color: white;
+        font-weight: $heavyFont;
+        text-decoration: none;
+        padding: 1em;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+// ABOUT PAGE -----------------------------------
+
+.AboutPage {
+
+    display: flex;
+    flex-direction: column;
+
+    .selfie {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 100%;
+        align-self: center;
+    }
+
+    p {
+        font-size: 1.25em;
+        font-family: $sansSerifFont;
+        padding: 0.5em;
+    }
+
+    .mainTile {
+        background-color: $beige;
+        padding: 2em;
+        max-width: 90%;
+        align-self: center;
+        * {color: black;}
+        
+        .header {
+            display: flex;
+
+            .title {
+                padding: 1em;
+            }
+
+            h1 {
+                font-size: 4.5em;
+            }
+        }
+    }
+
+    .bottomStrip {
+        display: flex;
+
+        .leftItems {
+            display: flex;
+            flex: 2 1 0;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+        }
+        
+        .listSection {
+            display: block;
+            flex: 1 1 0;
+            padding: 1em;
+
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            li {
+                position: relative;
+                list-style: none;
+                padding: 0.25em;
+                text-align: center;
+                margin: 0.5em;
+                z-index: 2;
+                min-width: 130px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: $heavyFont;
+                }
+            }
+
+        }
+    }
+
+    #linkSection li:hover {
+        top: 2px;
+    }
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            flex: 1 1 0;
+            padding: 1em;
+            z-index: 1;
+            min-width: 100px;
+        }
+    }
+
+
+    .image {
+        float: right;
+        opacity: 50%;
+        width: 150px;
+        position: relative;
+        top: -80px;
+    }
+
+    #LinkImg {
+        transform: rotate(-45deg);
+        top: -40px;
+        z-index: 1;
+    }
+
+    #LangImg {
+        width: 120px;
+        top: -40px;
+        transform: rotateY(180deg);
+        opacity: 40%;
+    }
+
+
+    #CodeImg {
+        top: -30px;
+        transform: rotate(-10deg);
+    }
+
+
+    // VIEWPORTS ---
+
+    // Medium
+    @media (max-width: 880px) {
+
+        .title * {
+            line-height: 100%;
+            padding: 0px;
+            margin-bottom: 12px;
+        }
+
+        .leftItems {
+            flex-direction: column;
+        }
+
+        #linkSection {
+            height: 200px;
+
+            #LinkImg {
+                top: -50px;
+            }
+        }
+
+        #langSection {
+            height: 240px;
+            position: relative;
+            top: -80px;
+
+            #LangImg {
+                top: -100px;
+            }
+        }
+
+
+        }
+
+    // Small
+    @media (max-width: 650px) {
+        #LangImg {
+            position: relative;
+            top: -130px !important;
+            left: 30px
+        }
+    }
+}
+
+// PROJECTS PAGE -----------------------------------
+
+.ProjectsPage {
+    
+    .projectsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 0;
+        padding: 6px;
+        
+        h2 {
+            color: $purple;
+        }
+    }
+    
+    .ProjectCard {
+        display: flex;
+        flex: 1 2 auto;
+        color: black;
+        margin: 10px;
+        z-index: 1;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border: solid $orange 8px;
+        border-radius: 12px;
+        margin: 10;
+        align-items: end;
+        
+        min-width: 360px;
+        min-height: 360px;
+        overflow: hidden;
+
+        .badges {
+            padding: 0;
+        }
+
+        .badge {
+            margin-left: 0;
+        }
+    }
+    
+    .ProjectInfo {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 6px 12px;
+        width: 100%;
+
+        h3 {
+            font-family: $bodyFont;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .ExpandToggle {
+
+            button {
+                transform: scale(0.75);
+            }
+        
+            .content {
+                padding-top: 6px;
+                line-height: 100%;
+                font-weight: 300;
+            }
+        }
+    }
+    
+    h4.subtitle {
+        color: gray;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    p.dateDisplay {
+        text-align: right;
+    }
+    
+}
+
+// WORK PAGE -----------------------------------
+
+.WorkPage {
+
+    .WorkCard {
+        min-width: 500px;
+        z-index: 1;
+
+        h2 {
+            color: black;
+            border-bottom: solid $orange;
+            padding: 6px 0 0 0;
+            line-height: 120%;
+            font-size: 2.5em;
+        }
+
+        span.companyName {
+            opacity: 60%;
+            font-weight: 300;
+        }
+
+
+        ul {
+            padding: 0 30px;
+            list-style: none;
+        }
+        li {
+            text-align: justify;
+            text-indent: -24px; 
+        }
+
+        li::before {
+            content: '';
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url("../assets/check-circle.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            vertical-align: middle;
+            margin-right: 8px;
+            position: relative;
+            top: -1.5px;
+            left: 0px;
+        }
+
+    }
+
+    span.PageTitle {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+// EDUCATION PAGE -----------------------------------
+
+.EducationPage {
+
+    .ImageBanner {
+opacity: 40%;
+    }
+
+    .subtitle {
+        font-style: italic;
+        line-height: 100%;
+    }
+
+    .qualificationsSummary {
+        display: block;
+    }
+
+    ul.qualifications {
+        display: none;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .PageTitle {
+        text-align: left;
+    }
+
+    .circleContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        position: relative;
+        top: -50px;
+    }
+
+    .circle {        
+        $total: 4;
+        $radius: 280px;
+        position: relative;
+        $angle-offset: 25deg;
+        transform: rotate(-$angle-offset);
+        width: calc($radius *2);
+        height: calc($radius * 2);
+        border: solid white 10px;
+        border-top-color: transparent;
+        border-radius: 50%;
+
+        > div {
+            position: absolute;
+            top: 42%;
+            left: 35%;
+            width: 300px;
+            margin: -40px;
+            padding: 0px;
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        #EducationCard-0 {
+            $angle: calc(360deg / $total * 0.2 - 45deg);
+            transform: rotate($angle) translateX($radius) rotate(calc(-1 * $angle + $angle-offset));
+        }
+
+        #EducationCard-1 {
+            $angle: calc(360deg / $total * 1 - 45deg);
+            transform: rotate($angle) translateX($radius) rotate(calc(-1 * $angle + $angle-offset));
+        }
+
+        #EducationCard-2 {
+            $angle: calc(360deg / $total * 2.25 - 45deg);
+            transform: rotate($angle) translateX($radius) rotate(calc(-1 * $angle + $angle-offset));
+        }
+
+        #EducationCard-3 {
+            $angle: calc(360deg / $total * 3 - 45deg);
+            transform: rotate($angle) translateX($radius) rotate(calc(-1 * $angle + $angle-offset));
+            background-color: $orange;
+            
+            * {
+                color: white;
+            }
+
+            > .qualificationDisplay {
+                background-color: $purple;
+                color: white;
+            }
+        }
+
+
+        div.expandable:hover {
+            width: 400px;
+            top: 37%;
+            left: 20%;
+            z-index: 1;
+
+            ul.qualifications {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .qualificationsSummary {
+                display: none;
+            }
+        }
+
+        .cardHeader {
+            margin: 0;
+            padding: 18px;
+            padding-bottom: 0;
+        }
+
+        .qualificationDisplay {
+
+            background-color: #d9d9d9;
+            margin: 0;
+            text-align: center;
+            padding: 12px;
+
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            .qualificationName {
+                font-weight: bold;
+                font-size: 1.25em;
+                line-height: 100%;
+            }
+
+            .badge {
+                font-size: 0.8em;
+                background-color: #ffffff;
+                margin: 3px;
+                border-radius: 3px;
+                padding: 6px;
+                border: solid #3e3e3e 1px;
+                flex: 1 1 0;
+            }
+        }
+
+    }
+
+    // VIEWPORTS
+
+    // Medium
+    @media (max-width: 880px) {
+
+        h1.PageTitle {
+            text-align: center;
+        }
+        
+        .circleContainer {
+            top: 0px;
+            visibility: hidden;
+        }
+
+        .circle {
+            visibility: visible;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            transform: rotate(0deg);
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 0px;
+            margin: 0;
+            border-radius: 12px;;
+            padding: 10px;
+
+            > div {
+                margin: 0px;
+                width: unset;
+                flex: 1 1 0;
+                top: revert;
+                left: revert;
+                position: relative;
+                transform: none !important;
+                margin: 12px 0;
+                display: flex;
+                flex-direction: row;
+            }
+
+            > div.expandable:hover {
+                top: revert;
+                left: revert;
+                bottom: revert;
+                width: unset;
+            }
+        }
+
+        #EducationCard-2 .cardHeader {
+            padding-top: 8px !important;
+            padding-bottom: 0px !important;
+        }
+        .cardHeader {
+            padding: 0 0 10px 10px !important;
+
+            flex: 1 1 0;
+            display: flex;
+            flex-direction:  column;
+            justify-content: center;
+
+            h2 {
+                margin: 0;
+                padding: 0;
+            }
+
+            .subtitle {
+                padding: -10px;
+                margin-top: 3px;
+            }
+        }
+
+        .qualificationDisplay {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            flex: 1 1 0;
+            min-width: 240px;
+            max-width: 450px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+            .badge {
+                min-width: 150px;
+                overflow-wrap: break-word !important;
+                word-wrap: break-word !important;
+
+            }
+        }
+    }
+}
+
+// BADGE COLOURS -----------------------------------
+
+.badges {
+    display: flex;
+
+    .bdg-1 {
+        background-color: $blue;
+    }
+
+    .bdg-2 {
+        background-color: $orange;
+    }
+
+    .bdg-3 {
+        background-color: $purple;
+    }
+
+    .bdg-4 {
+        background-color: $yellow;
+    }
+
+}

@@ -1,0 +1,117 @@
+[
+  {
+    "start": 2026,
+    "end": 2026,
+    "role": "Web Developer",
+    "company": "House 337",
+    "description": [
+      "Part of an uplift team of developers on a fixed contract facilitating the launch of a product for a client company (one of the top 5 American tech companies) as part of a confidential workshop.",
+      "Collaborated with QA validators, translators, project managers and other developers to localise multiple web pages for diﬀerent countries across Europe, fixing copy and layout issues that arose when translating the web pages’ contents into numerous diﬀerent languages, and paying close attention to each country’s product availability and orthographical standards.",
+      "Quickly and eﬃciently responding to requests to edit the code, using HTML and CSS according to company guidelines and standards to make web pages adaptive and attractive across all browser viewport sizes on desktop and mobile, making use of custom classes and media queries.",
+      "Utilised an SVN version control system using both company-specific custom commands as well as standard ones."
+    ],
+    "skills": {
+      "technical": [
+        "HTML",
+        "CSS",
+        "Responsive design",
+        "Media queries",
+        "Custom classes",
+        "SVN version control",
+        "Cross-browser and viewport development",
+        "Localisation of web content"
+      ],
+      "soft": [
+        "Attention to detail",
+        "Cross-functional collaboration",
+        "Working to tight deadlines",
+        "Adaptability to company coding standards"
+      ]
+    }
+  },
+  {
+    "start": 2022,
+    "end": 2024,
+    "role": "English Language Assistant",
+    "company": "British\u00A0Council",
+    "description": [
+      "Two nine-month-long internships as a language assistant, teaching English as a second language to German school students first in Munich and then in Hamburg.",
+      "Interacting bilingually with students of various ages and national backgrounds, including those who were fluent in neither German nor English, and relating new grammatical concepts to those they were already familiar with.",
+      "Creating and delivering presentations to diﬀerent classes on topics that fell within the students’ interests and language ability while still introducing new ideas and vocabulary.",
+      "Leading group discussions and encouraging students to build arguments on their own.",
+      "Flexibly adapting to various teachers’ needs including preparing warm-ups, aiding in school trips, mediating between the German school and school groups from Spain and Italy, and delivering revision sessions for A-Level students who were studying the UK."
+    ],
+    "skills": {
+      "teaching and communication": [
+        "ESL instruction",
+        "Bilingual communication",
+        "Lesson planning",
+        "Public speaking",
+        "Presentation delivery",
+        "Differentiated instruction to varying ages & ability levels"
+      ],
+      "interpersonal": [
+        "Cross-cultural communication",
+        "Flexibility and responsiveness to colleagues' needs",
+        "Leading discussions",
+        "Intercultural mediation (between German, Spanish and Italian school groups)"
+      ]
+    }
+  },
+  {
+    "start": 2022,
+    "end": 2022,
+    "role": "Serving Staff",
+    "company": "Prezzo",
+    "description": [
+      "Greeting guests in a friendly and personable manner at the door and maintaining a calm and jovial attitude throughout the guests’ stay at the restaurant.",
+      "Memorising, recalling and communicating the menu to guests, which was altered numerous times over a relatively short period.",
+      "Following strict allergy protocols to ensure that no guest was unsafe during their visit.",
+      "Operating a POS computer system to work as quickly and eﬃciently as possible.",
+      "Pro-actively restocking the bar and cleaning the restaurants during quieter periods."
+    ],
+    "skills": {
+      "customer facing": [
+        "Guest relations",
+        "Menu memorisation",
+        "Communication",
+        "Allergy awareness",
+        "Adherence to safety protocols"
+      ],
+      "operational": [
+        "POS system operation",
+        "Working efficiently under pressure",
+        "Proactive stock management"
+      ]
+    }
+  },
+  {
+    "start": 2021,
+    "end": 2022,
+    "role": "Various Roles in Hospitality & Customer Service",
+    "company": "Off\u00A0to\u00A0Work",
+    "description": [
+      "Catering at private events such as weddings and team-leading at large-scale events such as the Mercury Awards 2021, ensuring all within my team were confident in what they needed to do and taking responsibility for a group of servers with very little notice.",
+      "Proactively suggesting that card-only signs be put in front of cashless tills so that queues would flow more smoothly while serving drinks at a busy music festival.",
+      "Keeping track of demand in order to rotate between various roles as a boot handler, ticket scanner and cloakroom attendant at a popular seasonal ice rink in Greenwich while overseeing and organising the re-labelling of all ice skates in the rink in both UK and EU sizes."
+    ],
+    "skills": {
+      "leadership": [
+        "Team leading",
+        "Delegation",
+        "Staff briefing",
+        "Taking responsibility for others"
+      ],
+      "initiative": [
+        "Proactive problem-solving",
+        "Self-directed task management",
+        "Adapting to multiple roles"
+      ],
+      "organisational": [
+        "Demand forecasting",
+        "Inventory reorganisation",
+        "Multitasking & prioritising"
+      ]
+    }
+  }
+]

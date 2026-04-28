@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Thinstripe Balaclava",
+    "subtitle": "A balaclava made for January",
+    "start": "2026-01-07",
+    "end": "2026-01-11",
+    "img": "balaclava",
+    "url": "https://www.ravelry.com/projects/cerithElis/thinstripe-balaclava",
+    "languages": ["Python"]
+  },
+  {
+    "name": "Outfoxed Mittens",
+    "subtitle": "Mittens with foxes",
+    "start": "2025-12-30",
+    "end": "2026-01-04",
+    "img": "mittens",
+    "url": "https://www.ravelry.com/projects/cerithElis/outfoxed-mitts",
+    "languages": ["HTML", "CSS"]
+  },
+  {
+    "name": "Osiris Scarf",
+    "subtitle": "A scarf for my partner's mother",
+    "start": "2025-12-05",
+    "end": "2025-12-29",
+    "img": "scarf",
+    "url": "https://www.ravelry.com/projects/cerithElis/osiris-cable-scarf",
+    "languages": ["JavaScript"]
+  }
+]

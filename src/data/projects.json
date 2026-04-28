@@ -1,0 +1,45 @@
+[
+  {
+    "name": "WrthSgwrs",
+    "subtitle": "A ChatGPT-powered chatbot to help Welsh learners practise their conversation skills (MSc Project)",
+    "date": "September 2025",
+    "img": "wrth_sgwrs.png",
+    "languages": ["Python", "Streamlit"],
+    "description": "Here are some lines describing the project"
+  },
+  {
+    "name": "TerminalCal",
+    "subtitle": "A simple calendar app used in the Terminal for keeping track of events.",
+    "date": "2025 I think",
+    "img": "terminal_cal.png",
+    "url": "https://github.com/cerithf",
+    "languages": ["Python"],
+    "description": "Here are some lines describing the project"
+  },
+  {
+    "name": "Covid Dashboard",
+    "subtitle": "A dashboard made as part of my uni course to show Covid cases by London borough.",
+    "date": "December 2025",
+    "img": "covid_dashboard.png",
+    "url": "https://github.com/cerithf",
+    "languages": ["Python", "MatPlotLib"],
+    "description": "Here are some lines describing the project"
+  },
+  {
+    "name": "US State Quiz",
+    "subtitle": "A quiz to guess US state names in the terminal.",
+    "date": "September 2024",
+    "img": "state_quiz.png",
+    "url": "https://github.com/cerithf",
+    "languages": ["Python"],
+    "description": "Here are some lines describing the project"
+  },
+  {
+    "name": "Rota",
+    "subtitle": "A Rota game using the PyGame library",
+    "date": "...",
+    "img": "rota.png",
+    "languages": ["Python", "PyGame"],
+    "description": "Here are some lines describing the project"
+  }
+]

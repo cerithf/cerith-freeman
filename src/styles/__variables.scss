@@ -1,0 +1,57 @@
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+// colours
+$blue: #083D77;
+$cream: #FAF0CA;
+$yellow: #F4D35E;
+$beige: #EBEBD3;
+$orange: #E77856;
+$red: #F95738;
+$pink: #DA4167;
+$purple: #88559c;
+$darkBrown: #4b3b3b;
+$lightGrey: #f1ebe5;
+$white: #ffffff;
+$black: #2A2A2A;
+// //--
+$brown: #723530;
+$background: #dfd8c5;
+// ---
+$lightShadow: rgb(241,235,229,0.2);
+$darkShadow: rgba(106, 104, 102, 0.2);
+$orangeShadow: rgba(238, 150, 75, 0.5);
+
+
+// fonts
+$sansSerifFont: "Instrument Sans";
+$serifFont: "Zen Antique";
+$headerFont: "Oswald", sans-serif;
+$bodyFont: "Inter", sans-serif;
+$lightFont: 600;
+$heavyFont: 800;
+$logoFont: calc(1.25 * 31.42px);
+
+// sizing
+$sidebarWidth: 20%;
+$standardPadding: 16px;
+
+//font classes
+.font-oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
