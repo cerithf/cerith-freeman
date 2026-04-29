@@ -2,6 +2,10 @@ import { useState } from "react";
 import Badge from "./Badge";
 import ExpandToggle from "./ExpandToggle";
 
+const getImageUrl = (name: string) => {
+  return new URL(`../assets/projects/${name}`, import.meta.url).href;
+};
+
 interface Props {
   data: {
     name: string;
@@ -20,7 +24,7 @@ const ProjectCard = ({ data }: Props) => {
   return (
     <div
       className={`ProjectCard ${projectClassName}`}
-      style={{ backgroundImage: `url(${imagePath})` }}
+      style={{ backgroundImage: `url("${getImageUrl(data.img)}")` }}
     >
       <div className="ProjectInfo">
         <p className="dateDisplay">{data.date}</p>
