@@ -132,7 +132,10 @@ html:has(div.homePage) {
         flex: 1 1 0;
         width: 100%;
     }
+}
 
+.homePage {
+    h1 {font-size: 5em !important;}
 }
 
 .stripe-group-1 {

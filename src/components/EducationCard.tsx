@@ -15,23 +15,25 @@ interface Props {
   };
 }
 
-const isSmallViewport = (num: number) => {
+// checks whether viewport width is below given number
+// medium VP: 880px; mobile: 400px;
+const isViewportLessThan = (num: number) => {
   const query = window.matchMedia(`(max-width: ${num}px)`);
-  const [isSmallViewport, setIsSmallViewport] = useState(query.matches);
+  const [isViewportLessThan, setisViewportLessThan] = useState(query.matches);
 
   useEffect(() => {
     const handleChange = (e: MediaQueryListEvent) =>
-      setIsSmallViewport(e.matches);
+      setisViewportLessThan(e.matches);
     query.addEventListener("change", handleChange);
     return () => query.removeEventListener("change", handleChange);
   }, []);
 
-  return isSmallViewport;
+  return isViewportLessThan;
 };
 
 const gradeDisplay = (grade: string) => {
   const output =
-    grade == "Double Distinction*" && isSmallViewport(880) ? "DD*" : grade;
+    grade == "Double Distinction*" && isViewportLessThan(880) ? "DD*" : grade;
   return output;
 };
 
@@ -40,6 +42,15 @@ const EducationCard = ({ index, data }: Props) => {
   const cardClassName = data.useBadges
     ? "EducationCard card expandable"
     : "EducationCard card";
+  const badgeDisplay = () => (
+    <ul className="qualifications">
+      {data.qualifications.map(
+        (entry: { name: string; grade: string; emoji?: string }) => (
+          <Badge>{`${entry.name} ${entry.emoji ?? ""} | ${gradeDisplay(entry.grade)}`}</Badge>
+        ),
+      )}
+    </ul>
+  );
 
   return (
     <div className={cardClassName} id={`EducationCard-${index}`}>
@@ -57,13 +68,7 @@ const EducationCard = ({ index, data }: Props) => {
           ""
         )}
         {data.useBadges ? (
-          <ul className="qualifications">
-            {data.qualifications.map(
-              (entry: { name: string; grade: string; emoji?: string }) => (
-                <Badge>{`${entry.name} ${entry.emoji ?? ""} | ${gradeDisplay(entry.grade)}`}</Badge>
-              ),
-            )}
-          </ul>
+          badgeDisplay()
         ) : (
           <>
             <p className="qualificationName">{data.qualifications[0].name}</p>

@@ -502,7 +502,7 @@ ul.NavBar {
 
 
         ul {
-            padding: 0 30px;
+            padding: 0 15px 0 30px;
             list-style: none;
         }
         li {
@@ -567,7 +567,7 @@ opacity: 40%;
         align-items: center;
         height: 500px;
         position: relative;
-        top: -50px;
+        top: -72px;
     }
 
     .circle {        
@@ -727,6 +727,15 @@ opacity: 40%;
             }
         }
 
+        #EducationCard-0:hover {
+            .cardHeader {
+                flex: 0.3 1 0;
+                h2 {font-size: 1.4em;}
+                p.dateDisplay {font-size: 1em;}
+            }
+            .qualifications {font-size: 0.9em;}
+        }
+
         #EducationCard-2 .cardHeader {
             padding-top: 8px !important;
             padding-bottom: 0px !important;
@@ -798,6 +807,8 @@ opacity: 40%;
 // MOBILE VIEWPORT ---------------------------------
 
 @media(max-width: 400px) {
+
+    // General
     .mobile-only {
         display: block;
     }
@@ -807,6 +818,24 @@ opacity: 40%;
         padding: 16px;
     }
 
+    // Components
+    ul.NavBar {
+        flex-wrap: wrap;
+
+        li {
+            min-width: 33%;
+        }
+
+        a {
+            padding: 8px;
+        }
+    }
+
+    .ImageBanner {
+        transform: translateX(-50px);
+    }
+
+    // Pages
     .homePage {
         #headingContainer {
             font-size: 16px;
@@ -844,18 +873,6 @@ opacity: 40%;
         }
     }
     
-    ul.NavBar{
-        flex-wrap: wrap;
-
-        li {
-            min-width: 33%;
-        }
-
-        a {
-            padding: 8px;
-        }
-    }
-
     .AboutPage {
         .header {
             flex-direction: column;
@@ -866,11 +883,9 @@ opacity: 40%;
     .WorkPage {
         .WorkCard {
             min-width: inherit;
-        }
-    }
 
-    .ImageBanner {
-        transform: translateX(-50px);
+            li {font-size: 0.9em;}
+        }
     }
 
     .EducationPage {
@@ -891,6 +906,13 @@ opacity: 40%;
                 .qualifications {font-size: 0.75em;}
             }
             
+        }
+
+        #EducationCard-0:hover {
+            .cardHeader {
+                h2 {font-size: 1em;}
+                p.dateDisplay {font-size: 0.65em;}
+            }
         }
 
 
