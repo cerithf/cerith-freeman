@@ -10,7 +10,7 @@
   {
     "name": "TerminalCal",
     "subtitle": "A simple calendar app used in the Terminal for keeping track of events.",
-    "date": "2025 I think",
+    "date": "December 2025",
     "img": "terminal_cal.png",
     "url": "https://github.com/cerithf",
     "languages": ["Python"],
@@ -26,20 +26,20 @@
     "description": "Here are some lines describing the project"
   },
   {
-    "name": "US State Quiz",
-    "subtitle": "A quiz to guess US state names in the terminal.",
-    "date": "September 2024",
-    "img": "state_quiz.png",
-    "url": "https://github.com/cerithf",
-    "languages": ["Python"],
+    "name": "Rota",
+    "subtitle": "A Rota game using the PyGame library",
+    "date": "July 2025",
+    "img": "rota.png",
+    "languages": ["Python", "PyGame"],
     "description": "Here are some lines describing the project"
   },
   {
-    "name": "Rota",
-    "subtitle": "A Rota game using the PyGame library",
-    "date": "...",
-    "img": "rota.png",
-    "languages": ["Python", "PyGame"],
+    "name": "US State Quiz",
+    "subtitle": "A quiz to guess US state names in the terminal.",
+    "date": "October 2024",
+    "img": "state_quiz.png",
+    "url": "https://github.com/cerithf",
+    "languages": ["Python"],
     "description": "Here are some lines describing the project"
   }
 ]

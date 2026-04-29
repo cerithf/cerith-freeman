@@ -20,7 +20,7 @@ const ProjectCard = ({ data }: Props) => {
   return (
     <div
       className={`ProjectCard ${projectClassName}`}
-      style={{ backgroundImage: `url("${imagePath}")` }}
+      style={{ backgroundImage: `url(${imagePath})` }}
     >
       <div className="ProjectInfo">
         <p className="dateDisplay">{data.date}</p>
