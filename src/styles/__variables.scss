@@ -55,3 +55,9 @@ $standardPadding: 16px;
   font-weight: 300;
   font-style: normal;
 }
+
+// breakpoints -- if changing these, remember to edit them in utils/constants.ts too
+  $BP-mobile: 400px;
+  $BP-small: 640px;
+  $BP-medium: 880px;
+  $BP-large: 1280px;

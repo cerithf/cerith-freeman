@@ -26,13 +26,14 @@ const About = () => {
           </div>
         </div>
         <p>
-          Hi there, my name's Cerith! 👋🏻 I'm a front-end web developer just
-          starting&nbsp;out.
+          Hi there, <br className="mobile-only" />
+          my name's Cerith! 👋🏻 <br className="mobile-only" />
+          I'm a front-end web developer just starting&nbsp;out.
         </p>
         <p>
           Having just completed my master's in{" "}
-          <strong>Computing & Information Services</strong> at
-          <strong> Queen Mary’s Uni&shy;versity of London</strong>, I'm
+          <strong> Computing & Information Services </strong> at
+          <strong> Queen Mary Uni&shy;versity of London</strong>,{"  "}I'm
           look&shy;ing to expand my skills as a web developer in the real world.
         </p>
         <p>

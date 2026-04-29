@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import Badge from "./Badge";
 import ExpandToggle from "./ExpandToggle";
+import useIsViewportLessThan from "../hooks/useIsViewportLessThan";
+import { BREAKPOINTS } from "../utils/constants";
 
 interface Props {
   index: number;
@@ -15,25 +17,11 @@ interface Props {
   };
 }
 
-// checks whether viewport width is below given number
-// medium VP: 880px; mobile: 400px;
-const isViewportLessThan = (num: number) => {
-  const query = window.matchMedia(`(max-width: ${num}px)`);
-  const [isViewportLessThan, setisViewportLessThan] = useState(query.matches);
-
-  useEffect(() => {
-    const handleChange = (e: MediaQueryListEvent) =>
-      setisViewportLessThan(e.matches);
-    query.addEventListener("change", handleChange);
-    return () => query.removeEventListener("change", handleChange);
-  }, []);
-
-  return isViewportLessThan;
-};
-
 const gradeDisplay = (grade: string) => {
   const output =
-    grade == "Double Distinction*" && isViewportLessThan(880) ? "DD*" : grade;
+    grade == "Double Distinction*" && useIsViewportLessThan(BREAKPOINTS.medium)
+      ? "DD*"
+      : grade;
   return output;
 };
 
@@ -58,8 +46,10 @@ const EducationCard = ({ index, data }: Props) => {
         <p className="dateDisplay">
           {data.year} | {data.level}
         </p>
-        <h2>{data.school}</h2>
-        {data.subtitle ? <p className="subtitle">{data.subtitle}</p> : ""}
+        <div className="school-name-and-subtitle">
+          <h2>{data.school}</h2>
+          {data.subtitle ? <p className="subtitle">{data.subtitle}</p> : ""}
+        </div>
       </div>
       <div className="qualificationDisplay">
         {data.qualificationsSummary ? (

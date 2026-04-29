@@ -371,7 +371,7 @@ ul.NavBar {
     // VIEWPORTS ---
 
     // Medium
-    @media (max-width: 880px) {
+    @media (max-width: $BP-medium) {
 
         .title * {
             line-height: 100%;
@@ -405,15 +405,22 @@ ul.NavBar {
         }
 
     // Small
-    @media (max-width: 650px) {
+    @media (max-width: $BP-small) {
         #LangImg {
             position: relative;
             top: -130px !important;
             left: 30px
         }
+        
+        .header {
+            flex-direction: column;
+        }
+
+        .mainTile {
+            text-align: center;
+        }
     }
 
-    // Mobile
 }
 
 // PROJECTS PAGE -----------------------------------
@@ -680,7 +687,7 @@ opacity: 40%;
     // VIEWPORTS
 
     // Medium
-    @media (max-width: 880px) {
+    @media (max-width: $BP-medium) {
 
         h1.PageTitle {
             text-align: center;
@@ -694,8 +701,7 @@ opacity: 40%;
         .circle {
             visibility: visible;
             border: none;
-            display: flex;
-            flex-direction: column;
+            display: block;
             flex-wrap: wrap;
             transform: rotate(0deg);
             top: 0;
@@ -706,17 +712,15 @@ opacity: 40%;
             border-radius: 12px;;
             padding: 10px;
 
-            > div {
+            > div.EducationCard {
                 margin: 0px;
                 width: unset;
-                flex: 1 1 0;
                 top: revert;
                 left: revert;
                 position: relative;
                 transform: none !important;
-                margin: 12px 0;
-                display: flex;
-                flex-direction: row;
+                margin-bottom: 24px;
+                display: block;
             }
 
             > div.expandable:hover {
@@ -724,55 +728,46 @@ opacity: 40%;
                 left: revert;
                 bottom: revert;
                 width: unset;
+
+                ul.qualifications {
+                   flex-wrap: nowrap;
+                }
             }
         }
-
-        #EducationCard-0:hover {
-            .cardHeader {
-                flex: 0.3 1 0;
-                h2 {font-size: 1.4em;}
-                p.dateDisplay {font-size: 1em;}
-            }
-            .qualifications {font-size: 0.9em;}
-        }
-
-        #EducationCard-2 .cardHeader {
-            padding-top: 8px !important;
-            padding-bottom: 0px !important;
-        }
-        .cardHeader {
-            padding: 0 0 10px 10px !important;
-
-            flex: 1 1 0;
-            display: flex;
-            flex-direction:  column;
-            justify-content: center;
+        
+        .circle .cardHeader {
+            padding: 12px;
+            display: block;
 
             h2 {
                 margin: 0;
                 padding: 0;
             }
 
-            .subtitle {
-                padding: -10px;
-                margin-top: 3px;
+            .school-name-and-subtitle {
+                display: flex;
+
+                .subtitle {
+                    text-align: right;
+                    flex: 1 1 0;
+                    align-self: center;
+                    padding: -10px;
+                    padding-top: 6px;
+                    margin: 0;
+                }
             }
         }
 
         .qualificationDisplay {
-            display: flex;
-            flex-direction: column;
+            display: block;
+            flex-direction: row;
             justify-content: center;
             margin: 0;
             padding: 0;
-            flex: 1 1 0;
-            min-width: 240px;
-            max-width: 450px;
-            overflow-y: scroll;
-            overflow-x: hidden;
+            overflow-x: scroll;
+            overflow-y: hidden;
 
             .badge {
-                min-width: 150px;
                 overflow-wrap: break-word !important;
                 word-wrap: break-word !important;
 
@@ -806,7 +801,7 @@ opacity: 40%;
 
 // MOBILE VIEWPORT ---------------------------------
 
-@media(max-width: 400px) {
+@media(max-width: $BP-mobile) {
 
     // General
     .mobile-only {
@@ -820,14 +815,9 @@ opacity: 40%;
 
     // Components
     ul.NavBar {
-        flex-wrap: wrap;
-
-        li {
-            min-width: 33%;
-        }
 
         a {
-            padding: 8px;
+            padding: 8px 0;
         }
     }
 
@@ -862,10 +852,11 @@ opacity: 40%;
         li {
             border: none !important;
         }
+
         li:nth-child(2) {
             background-color: $orange !important;
         }
-                li:nth-child(3) {
+        li:nth-child(3) {
             background-color: $yellow !important;
         }
         li:nth-child(4) {
@@ -878,6 +869,13 @@ opacity: 40%;
             flex-direction: column;
             text-align: center;
         }
+
+        .mainTile {
+            p {
+                line-height: 120%;
+                text-align: center;
+            }
+        }
     }
 
     .WorkPage {
@@ -887,34 +885,17 @@ opacity: 40%;
             li {font-size: 0.9em;}
         }
     }
-
+    
     .EducationPage {
-        .EducationCard {
-            width: 100% !important;
+        .circle .EducationCard {
 
-            .cardHeader {
-                margin: 0 12px;
-                padding: 0 !important;
-                p.dateDisplay {font-size: 14px;}
-                h2 {font-size: 20px;}
-                .subtitle {font-size: 12px;}
-            }
+            .subtitle {font-size: 0.9em;}
+
             .qualificationDisplay {
-                min-width: inherit;
-                max-width: inherit;
-                .qualificationName {font-size: 1em;}
-                .qualifications {font-size: 0.75em;}
-            }
-            
-        }
-
-        #EducationCard-0:hover {
-            .cardHeader {
-                h2 {font-size: 1em;}
-                p.dateDisplay {font-size: 0.65em;}
+                padding: 8px;
+                font-size: 0.85em;
             }
         }
-
-
     }
+    
 }
