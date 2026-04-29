@@ -9,3 +9,11 @@ export const BREAKPOINTS = {
 export const SITE_TITLE = "Cerith Freeman";
 
 export const NAV_LINKS = ["/about",  "/projects", "/work", "/education"];
+
+export const COLOURS = {
+  $red: "#F95738",
+  $yellow: "#F4D35E",
+  $orange: "#E77856",
+  $pink: "#DA4167",
+  $purple: "#88559c",
+};

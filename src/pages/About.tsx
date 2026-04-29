@@ -1,18 +1,11 @@
 import React, { useState } from "react";
 import Selfie from "../assets/selfie.jpeg";
 import ColourfulList from "../components/ColourfulList";
+import { COLOURS } from "../utils/constants";
 //images
 import LinkImg from "../assets/link.svg";
 import LangImg from "../assets/chat.svg";
 import CodeImg from "../assets/code-slash.svg";
-
-const colours = {
-  $red: "#F95738",
-  $yellow: "#F4D35E",
-  $orange: "#E77856",
-  $pink: "#DA4167",
-  $purple: "#88559c",
-};
 
 const About = () => {
   return (
@@ -46,12 +39,12 @@ const About = () => {
           <div id="linkSection" className="listSection">
             <h2>Links to more</h2>
             <ul className="list">
-              <li style={{ backgroundColor: colours.$orange }}>
+              <li style={{ backgroundColor: COLOURS.$orange }}>
                 <a href="mailto:cerith.elis@gmail.com" className="label">
                   Send me an email
                 </a>
               </li>
-              <li style={{ backgroundColor: colours.$purple }}>
+              <li style={{ backgroundColor: COLOURS.$purple }}>
                 <a href="../assets/cv.pdf" className="label">
                   See my CV
                 </a>
@@ -68,10 +61,10 @@ const About = () => {
               <li title="Gwell Cymraeg slac na Saesneg slic!">
                 <strong>Welsh</strong> | Native
               </li>
-              <li title="Sprich mich an auf Deutsch!" style={{ width: "75%" }}>
+              <li title="Sprich mich an auf Deutsch!" id="li-German">
                 <strong> German </strong> | C1
               </li>
-              <li title="¡Hablámanos!" style={{ width: "50%" }}>
+              <li title="¡Hablámanos!" id="li-Spanish">
                 <strong>Spanish</strong> | A2
               </li>
             </ColourfulList>
@@ -90,6 +83,7 @@ const About = () => {
             <li>Figma</li>
             <li>SQL</li>
             <li>SVN</li>
+            <li>Git</li>
           </ColourfulList>
           <img className="white-filter image" id="CodeImg" src={CodeImg} />
         </div>

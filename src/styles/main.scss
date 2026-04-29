@@ -321,6 +321,9 @@ ul.NavBar {
                 }
             }
 
+            #li-German {width: 75%;}
+            #li-Spanish {width: 50%;}
+
         }
     }
 
@@ -398,12 +401,17 @@ ul.NavBar {
             #LangImg {
                 top: -100px;
             }
+
         }
 
         }
 
     // Small
     @media (max-width: $BP-small) {
+
+        #langSection {
+            li, #li-German, #li-Spanish {width: 90%;}
+        }
         #LangImg {
             position: relative;
             top: -130px !important;
@@ -537,6 +545,14 @@ ul.NavBar {
         justify-content: center;
     }
 
+    // Small viewport
+    @media(max-width: $BP-small) {
+        .WorkCard {
+            min-width: inherit;
+
+            li {font-size: 0.9em;}
+        }
+    }
 }
 
 // EDUCATION PAGE -----------------------------------
@@ -873,14 +889,6 @@ opacity: 40%;
                 line-height: 120%;
                 text-align: center;
             }
-        }
-    }
-
-    .WorkPage {
-        .WorkCard {
-            min-width: inherit;
-
-            li {font-size: 0.9em;}
         }
     }
     
