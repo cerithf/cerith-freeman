@@ -1,5 +1,16 @@
 [
   {
+    "name": "Portfolio Website",
+    "subtitle": "A portfolio website written in React showing my skills & projects",
+    "date": "April 2026",
+    "img": "portfolio.png",
+    "languages": ["HTML", "CSS", "JavaScript", "Typescript", "React", "Vercer"],
+    "description": [
+      "I made this website to introduce myself as a developer and show the skills I have and what I've done so far. I'm still early on in my journey so I hope to add much more to this site as I progress in the future!"
+    ],
+    "skills": ["responsive design"]
+  },
+  {
     "name": "WrthSgwrs",
     "subtitle": "A ChatGPT-powered chatbot to help\u00A0Welsh learners practise their conversation skills (MSc Project)",
     "date": "September 2025",
