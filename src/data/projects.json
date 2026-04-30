@@ -1,37 +1,61 @@
 [
   {
     "name": "WrthSgwrs",
-    "subtitle": "A ChatGPT-powered chatbot to help Welsh learners practise their conversation skills (MSc Project)",
+    "subtitle": "A ChatGPT-powered chatbot to help\u00A0Welsh learners practise their conversation skills (MSc Project)",
     "date": "September 2025",
     "img": "wrth_sgwrs.png",
     "languages": ["Python", "Streamlit"],
-    "description": "Here are some lines describing the project"
+    "description": [
+      "As part of my Master's project, I created a web app using Streamlit, which is an Python library designed to be an all-in-one solution for simple web apps.",
+      "The purpose of the app was to allow Welsh learners to practise their conversation skills using a ChatGPT-powered chatbot. Users could select specific topics to practise talking about, and save their progress as they progressed through each topic.",
+      "Users could also practise translating paragraphs, with the chatbot giving feedback to the user based on the quality of their answers."
+    ],
+    "skills": ["design", "UI", "UX", "user authentication", "Welsh", "APIs"]
   },
   {
     "name": "TerminalCal",
     "subtitle": "A simple calendar app used in the Terminal for keeping track of events.",
     "date": "December 2025",
-    "img": "terminal_cal.png",
+    "img": "terminal_cal_wide.png",
     "url": "https://github.com/cerithf",
-    "languages": ["Python"],
-    "description": "Here are some lines describing the project"
-  },
-  {
-    "name": "Covid Dashboard",
-    "subtitle": "A dashboard made as part of my uni course to show Covid cases by London borough.",
-    "date": "December 2025",
-    "img": "covid_dashboard.png",
-    "url": "https://github.com/cerithf",
-    "languages": ["Python", "MatPlotLib"],
-    "description": "Here are some lines describing the project"
+    "languages": ["Python", "Script Editor"],
+    "description": [
+      "This was a simple app I made using Python to solve a problem I had of needing somewhere where I could quickly make a note of an upcoming event while still being able to view future events in a structured way.",
+      "Events can be viewed either as a list or in month view. The app can be used in English, Welsh, German or Spanish.",
+      "For convenience, I created a desktop shortcut which runs the app using Apple's Script Editor."
+    ],
+    "skills": ["logic", "maths", "reading + writing files", "user flow"]
   },
   {
     "name": "Rota",
     "subtitle": "A Rota game using the PyGame library",
     "date": "July 2025",
-    "img": "rota.png",
+    "img": "rota_wide.png",
     "languages": ["Python", "PyGame"],
-    "description": "Here are some lines describing the project"
+    "description": [
+      "I recreated a Roman game called \"Rota\" using PyGame. I made a main menu, single- and multi-player game modes and a how-to-play page.",
+      "How to play: Players take turns placing their three pins onto the board, and then move one of their pins to an adjacent free space. The first player to line up their pins in a row is the winner."
+    ],
+    "skills": ["game design", "keeping scores", "logic"]
+  },
+  {
+    "name": "Covid Dashboard",
+    "subtitle": "A dashboard made as part of my uni course to show Covid cases by London borough.",
+    "date": "December 2024",
+    "img": "covid_dashboard.png",
+    "url": "https://github.com/cerithf",
+    "languages": [
+      "Python",
+      "Jupyter Notebook",
+      "MatPlotLib",
+      "Pandas",
+      "HTML",
+      "CSS"
+    ],
+    "description": [
+      "In the first term of my university course, I was tasked with using a Python script to analyse health data fetched from a UKHSA API. I decided to find additional data on the absolute populations and population densities of each inner London borough and compare them with the number of Covid cases reported within them. I plotted my findings using MatPlotLib and Pandas in a dashboard made with Jupyter Notebook."
+    ],
+    "skills": ["data analysis", "maths", "design"]
   },
   {
     "name": "US State Quiz",
@@ -40,6 +64,9 @@
     "img": "state_quiz.png",
     "url": "https://github.com/cerithf",
     "languages": ["Python"],
-    "description": "Here are some lines describing the project"
+    "description": [
+      "For fun, I made a quiz to test my knowledge of the US' 48 contiguous states which runs in the terminal. The player sees an ASCII representation of the map of the US with a number assigned to each state. They select a state using the number and make their guess. If they're correct, the number is replaced with the state's abbreviation (e.g. CA, TX, GA). The player wins when all states are correctly guessed."
+    ],
+    "skills": ["trivia", "game design", "user interaction via the terminal"]
   }
 ]

@@ -83,9 +83,9 @@ p.dateDisplay {
 
 .badge {
     background-color: rgb(219, 219, 219);
-    color: black !important;
+    color: black;
     font-weight: 400 !important;
-    border-radius: 4px;
+    border-radius: 2px;
     margin: 1px 4px;
 }
 
@@ -218,6 +218,7 @@ ul.NavBar {
     li {
         display: flex;
         font-family: $headerFont;
+        font-size: 1.5em;
         letter-spacing: 0.1em;
         flex: 1 1 0;
         justify-content: center;
@@ -235,7 +236,7 @@ ul.NavBar {
         color: white;
         font-weight: $heavyFont;
         text-decoration: none;
-        padding: 1em;
+        padding: 0.5em;
         width: 100%;
         text-align: center;
         cursor: pointer;
@@ -439,44 +440,48 @@ ul.NavBar {
         max-width: 100%;
         margin: 0;
         padding: 6px;
-        
-        h2 {
-            color: $purple;
-        }
     }
     
     .ProjectCard {
-        display: flex;
-        flex: 1 2 auto;
         color: black;
+        flex: 1 1 0;
         margin: 10px;
         z-index: 1;
         background-color: white;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        border: solid $orange 8px;
         border-radius: 12px;
         margin: 10;
         align-items: end;
-        
-        min-width: 360px;
+        border: solid white 16px;
+        min-width: 400px;
         min-height: 360px;
         overflow: hidden;
 
-        .badges {
+        h2 {
+            padding-top: 6px;
+        }
+
+        img {
+            width: 100%;
+            border-radius:  8px;
+        }
+
+        .projectInfo {
+            padding: 2px;
+        }
+
+        p.dateDisplay {
+            padding: 8px 0;
+        }
+        .badges, .projectSkillsContainer {
             padding: 0;
+            overflow-x: scroll;
         }
 
         .badge {
             margin-left: 0;
         }
-    }
-    
-    .ProjectInfo {
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 6px 12px;
-        width: 100%;
+
+
     }
     
     h4.subtitle {
@@ -488,6 +493,17 @@ ul.NavBar {
 
     p.dateDisplay {
         text-align: right;
+    }
+
+    div.description p {
+        text-align: justify;
+        margin: 6px 0;
+    }
+
+    @media(max-width: $BP-medium) {
+        div.cardsContainer {
+            padding: 0 5%;
+        }
     }
     
 }
@@ -538,6 +554,9 @@ ul.NavBar {
             left: 0px;
         }
 
+        .ExpandToggle .content {
+        text-align: left;
+        }
     }
 
     span.PageTitle {
@@ -792,27 +811,6 @@ opacity: 40%;
 
 // BADGE COLOURS -----------------------------------
 
-.badges {
-    display: flex;
-
-    .bdg-1 {
-        background-color: $blue;
-    }
-
-    .bdg-2 {
-        background-color: $orange;
-    }
-
-    .bdg-3 {
-        background-color: $purple;
-    }
-
-    .bdg-4 {
-        background-color: $yellow;
-    }
-
-}
-
 // MOBILE VIEWPORT ---------------------------------
 
 @media(max-width: $BP-mobile) {
@@ -891,7 +889,7 @@ opacity: 40%;
             }
         }
     }
-    
+
     .EducationPage {
         .circle .EducationCard {
 

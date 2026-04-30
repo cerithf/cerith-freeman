@@ -1,18 +1,33 @@
 import { useState } from "react";
+import { COLOURS } from "../utils/constants";
 
 interface Props {
   children: string;
 }
 
-const languageColour = ["Python", "HTML", "CSS", "JavaScript"];
+const languageColors = {
+  Python: COLOURS.$blue,
+  HTML: COLOURS.$orange,
+  CSS: COLOURS.$purple,
+  JavaScript: COLOURS.$yellow,
+};
 
 const Badge = ({ children }: Props) => {
-  const badgeNum = languageColour.indexOf(children) + 1;
-  const textColor = badgeNum == 0 ? "color-black" : "color-white";
+  const badgeBackgroundColor =
+    children in languageColors
+      ? languageColors[children as keyof typeof languageColors]
+      : COLOURS.$lightGrey;
+  const textColor =
+    badgeBackgroundColor == COLOURS.$lightGrey ? "color-black" : "color-white";
   // sets badge colour to grey if no language is found in languageColour
   return (
     <>
-      <span className={`badge bdg-${badgeNum} ${textColor}`}>{children}</span>
+      <span
+        style={{ backgroundColor: badgeBackgroundColor }}
+        className={`badge ${textColor}`}
+      >
+        {children}
+      </span>
     </>
   );
 };

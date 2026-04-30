@@ -33,7 +33,7 @@ const WorkCard = ({ data }: Props) => {
           <li>{item}</li>
         ))}
       </ul>
-      <ExpandToggle title="Skills" style={0}>
+      <ExpandToggle title="Skills" startsOpen={true} style={0}>
         {skillGroups.map((skillGroup) => (
           <p>
             <strong>{skillGroup}:</strong>
