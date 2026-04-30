@@ -828,9 +828,8 @@ opacity: 40%;
     // Components
     ul.NavBar {
 
-        a {
-            padding: 8px 0;
-        }
+        a {padding: 8px 0;}
+        li {font-size: 1em;}
     }
 
     .ImageBanner {
@@ -887,6 +886,17 @@ opacity: 40%;
                 line-height: 120%;
                 text-align: center;
             }
+        }
+    }
+
+    .ProjectsPage {
+
+        div.cardsContainer {
+            padding: 0;
+        }
+        
+        .ProjectCard {
+            min-width: 90%;
         }
     }
 
