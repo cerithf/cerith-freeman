@@ -18,7 +18,8 @@ function NavBar() {
           <li className={useLocation().pathname == page.path ? "active" : ""}>
             <a href={page.path}>
               {page.name == "education" &&
-              useIsViewportLessThan(BREAKPOINTS.mobile)
+              useIsViewportLessThan(BREAKPOINTS.mobile) &&
+              useLocation().pathname != "/"
                 ? "edu"
                 : page.name}
             </a>

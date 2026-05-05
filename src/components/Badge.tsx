@@ -17,13 +17,15 @@ const Badge = ({ children }: Props) => {
     children in languageColors
       ? languageColors[children as keyof typeof languageColors]
       : COLOURS.$lightGrey;
-  const textColor =
-    badgeBackgroundColor == COLOURS.$lightGrey ? "color-black" : "color-white";
-  // sets badge colour to grey if no language is found in languageColour
+  const textColor = [COLOURS.$lightGrey, COLOURS.$yellow].includes(
+    badgeBackgroundColor,
+  )
+    ? "black"
+    : "white";
   return (
     <>
       <span
-        style={{ backgroundColor: badgeBackgroundColor }}
+        style={{ backgroundColor: badgeBackgroundColor, color: textColor }}
         className={`badge ${textColor}`}
       >
         {children}
