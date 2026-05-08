@@ -25,7 +25,7 @@ const About = () => {
         </p>
         <p>
           Having just completed my master's in{" "}
-          <strong> Computing & Information Services </strong> at
+          <strong> Computing & Information Systems </strong> at
           <strong> Queen Mary Uni&shy;versity of London</strong>,{"  "}I'm
           look&shy;ing to expand my skills as a web developer in the real world.
         </p>
