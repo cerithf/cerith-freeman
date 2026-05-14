@@ -80,6 +80,7 @@ const About = () => {
             <li>TypeScript</li>
             <li>React</li>
             <li>Python</li>
+            <li>Tailwind</li>
             <li>Figma</li>
             <li>SQL</li>
             <li>SVN</li>
