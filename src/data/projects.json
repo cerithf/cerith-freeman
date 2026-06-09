@@ -57,11 +57,11 @@
     "url": "https://github.com/cerithf",
     "languages": [
       "Python",
+      "HTML",
+      "CSS",
       "Jupyter Notebook",
       "MatPlotLib",
-      "Pandas",
-      "HTML",
-      "CSS"
+      "Pandas"
     ],
     "description": [
       "In the first term of my university course, I was tasked with using a Python script to analyse health data fetched from a UKHSA API. I decided to find additional data on the absolute populations and population densities of each inner London borough and compare them with the number of Covid cases reported within them. I plotted my findings using MatPlotLib and Pandas in a dashboard made with Jupyter Notebook."
