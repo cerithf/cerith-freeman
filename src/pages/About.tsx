@@ -15,7 +15,11 @@ const About = () => {
         <div className="header">
           <img src={Selfie} title="selfie" className="selfie" />
           <div className="title">
-            <h1 className="pageTitle">Cerith Freeman</h1>
+            <h1 className="pageTitle">
+              <Link to="/" className="text-decoration-none">
+                Cerith Freeman
+              </Link>
+            </h1>
             <h3 className="font-inter">/'kɛrɪθ 'friːmən/</h3>
           </div>
         </div>
