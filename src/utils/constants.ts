@@ -17,5 +17,6 @@ export const COLOURS = {
   $pink: "#DA4167",
   $purple: "#88559c",
   $blue: "#083D77",
-  $lightGrey: "rgb(219, 219, 219)"
+  $lightGrey: "rgb(219, 219, 219)",
+  $veryLightGrey: "#fafafa"
 };

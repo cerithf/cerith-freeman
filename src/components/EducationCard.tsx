@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Badge from "./Badge";
 import ExpandToggle from "./ExpandToggle";
 import useIsViewportLessThan from "../hooks/useIsViewportLessThan";
-import { BREAKPOINTS } from "../utils/constants";
+import { BREAKPOINTS, COLOURS } from "../utils/constants";
 
 interface Props {
   index: number;
@@ -34,7 +34,9 @@ const EducationCard = ({ index, data }: Props) => {
     <ul className="qualifications">
       {data.qualifications.map(
         (entry: { name: string; grade: string; emoji?: string }) => (
-          <Badge>{`${entry.name} ${entry.emoji ?? ""} | ${gradeDisplay(entry.grade)}`}</Badge>
+          <Badge
+            backgroundColor={COLOURS.$veryLightGrey}
+          >{`${entry.name} ${entry.emoji ?? ""} | ${gradeDisplay(entry.grade)}`}</Badge>
         ),
       )}
     </ul>

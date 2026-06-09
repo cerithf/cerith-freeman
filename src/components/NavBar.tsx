@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import useIsViewportLessThan from "../hooks/useIsViewportLessThan";
 import { BREAKPOINTS } from "../utils/constants";
+import { Link } from "react-router";
 
 function NavBar() {
   const PageArray = ["about", "projects", "work", "education"];
@@ -16,13 +17,13 @@ function NavBar() {
       >
         {Pages.map((page) => (
           <li className={useLocation().pathname == page.path ? "active" : ""}>
-            <a href={page.path}>
+            <Link to={page.path} viewTransition>
               {page.name == "education" &&
               useIsViewportLessThan(BREAKPOINTS.mobile) &&
               useLocation().pathname != "/"
                 ? "edu"
                 : page.name}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

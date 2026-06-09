@@ -3,6 +3,7 @@ import { COLOURS } from "../utils/constants";
 
 interface Props {
   children: string;
+  backgroundColor?: string;
 }
 
 const languageColors = {
@@ -12,14 +13,16 @@ const languageColors = {
   JavaScript: COLOURS.$yellow,
 };
 
-const Badge = ({ children }: Props) => {
+const Badge = ({ backgroundColor = COLOURS.$lightGrey, children }: Props) => {
   const badgeBackgroundColor =
     children in languageColors
       ? languageColors[children as keyof typeof languageColors]
-      : COLOURS.$lightGrey;
-  const textColor = [COLOURS.$lightGrey, COLOURS.$yellow].includes(
-    badgeBackgroundColor,
-  )
+      : backgroundColor;
+  const textColor = [
+    COLOURS.$lightGrey,
+    COLOURS.$veryLightGrey,
+    COLOURS.$yellow,
+  ].includes(badgeBackgroundColor)
     ? "black"
     : "white";
   return (

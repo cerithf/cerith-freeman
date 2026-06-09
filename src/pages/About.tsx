@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Selfie from "../assets/selfie.jpeg";
 import ColourfulList from "../components/ColourfulList";
 import { COLOURS } from "../utils/constants";
+import { Link } from "react-router";
 //images
 import LinkImg from "../assets/link.svg";
 import LangImg from "../assets/chat.svg";
