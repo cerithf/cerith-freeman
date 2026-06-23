@@ -1,5 +1,23 @@
 [
   {
+    "name": "React Project Playground",
+    "subtitle": "A React website to practice and organise coding projects.",
+    "date": "Ongoing",
+    "img": "RPP.png",
+    "languages": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Typescript",
+      "React",
+      "Tailwind CSS"
+    ],
+    "description": [
+      "A place for me to build projects in React to develop my skills as a coder. Each page is a different project, and I'll come back to it regularly to add new ones."
+    ],
+    "skills": ["programming", "design"]
+  },
+  {
     "name": "Portfolio Website",
     "subtitle": "A portfolio website written in React showing my skills & projects",
     "date": "April 2026",
