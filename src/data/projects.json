@@ -1,7 +1,19 @@
 [
   {
+    "name": "Risto",
+    "subtitle": "A website for a fictitious restaurant to practise full-stack programming",
+    "date": "Ongoing",
+    "img": "risto.png",
+    "languages": ["HTML", "CSS", "JavaScript", "Bootstrap", "React"],
+    "description": [
+      "The Risto website contains pages for browsing the menu and (fictional) locations and contains an FAQ page and a contact form."
+    ],
+    "skills": ["programming", "design"],
+    "underConstruction": true
+  },
+  {
     "name": "React Project Playground",
-    "subtitle": "A React website to practice and organise coding projects.",
+    "subtitle": "A React website to practise and organise coding projects.",
     "date": "Ongoing",
     "img": "RPP.png",
     "languages": [
@@ -13,7 +25,8 @@
       "Tailwind CSS"
     ],
     "description": [
-      "A place for me to build projects in React to develop my skills as a coder. Each page is a different project, and I'll come back to it regularly to add new ones."
+      "A place for me to build projects in React to develop my skills as a coder. Each page is a different project, and I'll come back to it regularly to add new ones.",
+      "Projects so far include: a to-do list, a Wordle clone and a Markdown previewer."
     ],
     "skills": ["programming", "design"],
     "underConstruction": true

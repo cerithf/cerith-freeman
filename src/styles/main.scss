@@ -18,6 +18,10 @@ html, body, #root, .App {
   overflow-x: hidden;
 }
 
+.App {
+    padding-bottom: 24px;
+}
+
 body {
     font-family: $bodyFont;
     font-weight: 100;
@@ -74,11 +78,6 @@ p.dateDisplay {
     padding: 18px;
     border-radius: 6px;
     flex: 1 1 0;
-}
-
-.cardsContainer {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .badge {
@@ -443,15 +442,21 @@ ul.NavBar {
 // PROJECTS PAGE -----------------------------------
 
 .ProjectsPage {
+
+    .cardsContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1.5rem;
+  column-gap: 24px;
+  row-gap: 24x;
+  padding: 0 12px;
+    }
     
-    .cardsContainer > div {
+    .cardsContainer > div.ProjectCard {
         color: black;
-        flex: 1 1 0;
-        margin: 16px;
         z-index: 1;
         background-color: white;
         border-radius: 12px;
-        margin: 10;
         align-items: end;
         padding: 16px;
         min-width: 400px;
@@ -465,6 +470,7 @@ ul.NavBar {
         img {
             width: 100%;
             border-radius:  8px;
+            aspect-ratio: 440 / 248;
         }
 
         .projectInfo {
@@ -545,6 +551,11 @@ ul.NavBar {
 // WORK PAGE -----------------------------------
 
 .WorkPage {
+
+    .cardsContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     .WorkCard {
         min-width: 500px;
