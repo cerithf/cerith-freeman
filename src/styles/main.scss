@@ -313,6 +313,8 @@ ul.NavBar {
             }
 
             li {
+                border: none;
+                width: 100%;
                 position: relative;
                 list-style: none;
                 padding: 0.25em;
@@ -321,8 +323,10 @@ ul.NavBar {
                 z-index: 2;
                 min-width: 130px;
 
-                a {
+                a, button {
                     color: white;
+                    background-color: transparent;
+                    border: none;
                     text-decoration: none;
                     font-weight: $heavyFont;
                 }

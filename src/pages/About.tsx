@@ -7,6 +7,15 @@ import { Link } from "react-router";
 import LinkImg from "../assets/link.svg";
 import LangImg from "../assets/chat.svg";
 import CodeImg from "../assets/code-slash.svg";
+// CV
+import CV from "../assets/CV.pdf";
+
+const handleDownloadCV = () => {
+  const link = document.createElement("a");
+  link.href = CV;
+  link.download = "cerith-freeman-cv.pdf";
+  link.click();
+};
 
 const About = () => {
   return (
@@ -45,23 +54,20 @@ const About = () => {
             <h2>Links to more</h2>
             <ul className="list">
               <li style={{ backgroundColor: COLOURS.$orange }}>
-                <a href="mailto:cerith.elis@gmail.com" className="label">
-                  Send me an email
-                </a>
+                <a href="mailto:cerith.elis@gmail.com">Send me an email</a>
               </li>
               <li style={{ backgroundColor: COLOURS.$yellow }}>
                 <a
                   href="https://github.com/cerithf"
-                  className="label"
                   style={{ color: COLOURS.$black }}
                 >
                   GitHub
                 </a>
               </li>
               <li style={{ backgroundColor: COLOURS.$purple }}>
-                <a href="../assets/CV.pdf" className="label">
-                  See my CV
-                </a>
+                <button className="cv-button" onClick={handleDownloadCV}>
+                  Download my CV
+                </button>
               </li>
             </ul>
             <img className="white-filter image" id="LinkImg" src={LinkImg} />
@@ -95,6 +101,7 @@ const About = () => {
             <li>React</li>
             <li>Python</li>
             <li>Tailwind</li>
+            <li>Bootstrap</li>
             <li>Figma</li>
             <li>SQL</li>
             <li>SVN</li>
