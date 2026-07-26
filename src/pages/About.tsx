@@ -49,8 +49,17 @@ const About = () => {
                   Send me an email
                 </a>
               </li>
+              <li style={{ backgroundColor: COLOURS.$yellow }}>
+                <a
+                  href="https://github.com/cerithf"
+                  className="label"
+                  style={{ color: COLOURS.$black }}
+                >
+                  GitHub
+                </a>
+              </li>
               <li style={{ backgroundColor: COLOURS.$purple }}>
-                <a href="../assets/cv.pdf" className="label">
+                <a href="../assets/CV.pdf" className="label">
                   See my CV
                 </a>
               </li>

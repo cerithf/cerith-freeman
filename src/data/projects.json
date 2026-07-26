@@ -15,7 +15,8 @@
     "description": [
       "A place for me to build projects in React to develop my skills as a coder. Each page is a different project, and I'll come back to it regularly to add new ones."
     ],
-    "skills": ["programming", "design"]
+    "skills": ["programming", "design"],
+    "underConstruction": true
   },
   {
     "name": "Portfolio Website",

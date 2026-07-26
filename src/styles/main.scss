@@ -440,24 +440,16 @@ ul.NavBar {
 
 .ProjectsPage {
     
-    .projectsContainer {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 100%;
-        margin: 0;
-        padding: 6px;
-    }
-    
-    .ProjectCard {
+    .cardsContainer > div {
         color: black;
         flex: 1 1 0;
-        margin: 10px;
+        margin: 16px;
         z-index: 1;
         background-color: white;
         border-radius: 12px;
         margin: 10;
         align-items: end;
-        border: solid white 16px;
+        padding: 16px;
         min-width: 400px;
         min-height: 360px;
         overflow: hidden;
@@ -511,6 +503,38 @@ ul.NavBar {
             padding: 0 5%;
         }
     }
+
+    // Under construction border:
+
+    .cardsContainer > div.under-construction {
+    position: relative;
+    overflow: hidden;
+   
+    &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 8px;
+    background: repeating-linear-gradient(
+        45deg,
+        $yellow 0,
+        $yellow 20px,
+        $darkBrown 20px,
+        $darkBrown 40px
+    );
+    // for Safari:
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    // for Chrome/Firefox:
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    }
+}
     
 }
 

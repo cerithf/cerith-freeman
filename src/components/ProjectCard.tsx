@@ -16,13 +16,16 @@ interface Props {
     languages: string[];
     description: string[];
     skills: string[];
+    underConstruction?: Boolean;
   };
 }
 
 const ProjectCard = ({ data }: Props) => {
   const projectClassName = data.img.split(".")[0];
   return (
-    <div className={`ProjectCard ${projectClassName}`}>
+    <div
+      className={`ProjectCard ${projectClassName} ${data.underConstruction && "under-construction"}`}
+    >
       <img src={getImageUrl(data.img)} />
       <div className="projectInfo">
         <p className="dateDisplay">{data.date}</p>

@@ -18,5 +18,6 @@ export const COLOURS = {
   $purple: "#88559c",
   $blue: "#083D77",
   $lightGrey: "rgb(219, 219, 219)",
-  $veryLightGrey: "#fafafa"
+  $veryLightGrey: "#fafafa",
+  $black: "#2A2A2A"
 };
