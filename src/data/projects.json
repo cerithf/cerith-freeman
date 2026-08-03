@@ -43,6 +43,20 @@
     "skills": ["responsive design"]
   },
   {
+    "name": "TerminalCal",
+    "subtitle": "A simple calendar app used in the Terminal for keeping track of events.",
+    "date": "December 2025",
+    "img": "terminal_cal.png",
+    "url": "https://github.com/cerithf/terminal-cal",
+    "languages": ["Python", "Script Editor"],
+    "description": [
+      "This was a simple app I made using Python to solve a problem I had of needing somewhere where I could quickly make a note of an upcoming event while still being able to view future events in a structured way.",
+      "Events can be viewed either as a list or in month view. The app can be used in English, Welsh, German or Spanish.",
+      "For convenience, I created a desktop shortcut which runs the app using Apple's Script Editor."
+    ],
+    "skills": ["logic", "maths", "reading + writing files", "user flow"]
+  },
+  {
     "name": "WrthSgwrs",
     "subtitle": "A ChatGPT-powered chatbot to help\u00A0Welsh learners practise their conversation skills (MSc Project)",
     "date": "September 2025",
@@ -54,20 +68,6 @@
       "Users could also practise translating paragraphs, with the chatbot giving feedback to the user based on the quality of their answers."
     ],
     "skills": ["design", "UI", "UX", "user authentication", "Welsh", "APIs"]
-  },
-  {
-    "name": "TerminalCal",
-    "subtitle": "A simple calendar app used in the Terminal for keeping track of events.",
-    "date": "December 2025",
-    "img": "terminal_cal_wide.png",
-    "url": "https://github.com/cerithf",
-    "languages": ["Python", "Script Editor"],
-    "description": [
-      "This was a simple app I made using Python to solve a problem I had of needing somewhere where I could quickly make a note of an upcoming event while still being able to view future events in a structured way.",
-      "Events can be viewed either as a list or in month view. The app can be used in English, Welsh, German or Spanish.",
-      "For convenience, I created a desktop shortcut which runs the app using Apple's Script Editor."
-    ],
-    "skills": ["logic", "maths", "reading + writing files", "user flow"]
   },
   {
     "name": "Rota",
@@ -86,7 +86,6 @@
     "subtitle": "A dashboard made as part of my uni course to show Covid cases by London borough.",
     "date": "December 2024",
     "img": "covid_dashboard.png",
-    "url": "https://github.com/cerithf",
     "languages": [
       "Python",
       "HTML",
@@ -105,7 +104,6 @@
     "subtitle": "A quiz to guess US state names in the terminal.",
     "date": "October 2024",
     "img": "state_quiz.png",
-    "url": "https://github.com/cerithf",
     "languages": ["Python"],
     "description": [
       "For fun, I made a quiz to test my knowledge of the US' 48 contiguous states which runs in the terminal. The player sees an ASCII representation of the map of the US with a number assigned to each state. They select a state using the number and make their guess. If they're correct, the number is replaced with the state's abbreviation (e.g. CA, TX, GA). The player wins when all states are correctly guessed."

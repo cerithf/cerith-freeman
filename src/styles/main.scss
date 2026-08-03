@@ -452,7 +452,7 @@ ul.NavBar {
   padding: 0 12px;
     }
     
-    .cardsContainer > div.ProjectCard {
+    .cardsContainer > .ProjectCard {
         color: black;
         z-index: 1;
         background-color: white;
@@ -491,6 +491,25 @@ ul.NavBar {
 
 
     }
+
+    a.ProjectCard {
+        text-decoration: none; 
+
+        &:not(:hover) {
+            transition: transform 1s;
+            transform: rotate(0deg);
+        }
+
+        &:hover {
+            z-index: 2 !important;
+            position: relative;  
+            outline: $orange 6px solid;
+            transform: rotate(4deg);
+            transition: transform 2s, 
+        }
+    }
+
+
     
     h4.subtitle {
         color: gray;

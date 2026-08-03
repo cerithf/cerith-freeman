@@ -20,12 +20,9 @@ interface Props {
   };
 }
 
-const ProjectCard = ({ data }: Props) => {
-  const projectClassName = data.img.split(".")[0];
+const ProjectCardContents = ({ data }: Props) => {
   return (
-    <div
-      className={`ProjectCard ${projectClassName} ${data.underConstruction && "under-construction"}`}
-    >
+    <>
       <img src={getImageUrl(data.img)} />
       <div className="projectInfo">
         <p className="dateDisplay">{data.date}</p>
@@ -51,8 +48,30 @@ const ProjectCard = ({ data }: Props) => {
           </div>
         )}
       </div>
-    </div>
+    </>
   );
+};
+
+const ProjectCard = ({ data }: Props) => {
+  const projectClassName = data.img.split(".")[0];
+  if (data.url) {
+    return (
+      <a
+        href={data.url}
+        className={`ProjectCard ${projectClassName} ${data.underConstruction ? "under-construction" : ""}`}
+      >
+        <ProjectCardContents data={data} />
+      </a>
+    );
+  } else {
+    return (
+      <div
+        className={`ProjectCard ${projectClassName} ${data.underConstruction ? "under-construction" : ""}`}
+      >
+        <ProjectCardContents data={data} />
+      </div>
+    );
+  }
 };
 
 export default ProjectCard;
