@@ -40,8 +40,7 @@ const ProjectCardContents = ({ data }: Props) => {
         </div>
         {data.skills[0] != "" && (
           <div className="projectSkillsContainer">
-            <strong>Skills:</strong>
-            {"  "}
+            <strong>Skills:</strong>{" "}
             {data.skills.map((skill: string) => (
               <Badge>{skill}</Badge>
             ))}
