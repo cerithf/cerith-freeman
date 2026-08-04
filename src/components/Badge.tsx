@@ -11,6 +11,7 @@ const languageColors = {
   HTML: COLOURS.$orange,
   CSS: COLOURS.$purple,
   JavaScript: COLOURS.$yellow,
+  React: COLOURS.$red,
 };
 
 const Badge = ({ backgroundColor = COLOURS.$lightGrey, children }: Props) => {
