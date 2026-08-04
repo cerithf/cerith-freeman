@@ -11,6 +11,12 @@ const Projects = () => {
     <div className="ProjectsPage">
       <h1 className="PageTitle">Projects</h1>
       <ImageBanner imageName="codeImg" path={CodeImg} />
+      <div className="page-description">
+        <p>
+          Take a look at some of the projects I've made below. Some are still in
+          progress and some you can click on to see the code on GitHub.
+        </p>
+      </div>
       <div className="cardsContainer">
         {ProjectData.map((project) => (
           <ProjectCard data={project} />

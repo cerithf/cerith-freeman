@@ -100,6 +100,32 @@ p.dateDisplay {
     text-decoration: none;
 }
 
+.page-description {
+    top: -32px;
+    left: -12px;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    position: relative;
+    width: calc(100% + 24px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    
+    
+    p {
+        background-color: rgba(8, 61, 119, 0.75); 
+        // semi-transparent background colour for better legibility against image banner
+        box-shadow: 0 0 24px 24px rgba(8, 61, 119, 0.75); // feathers edges
+        border-radius: 12px;
+        width: 80%;
+        margin: 0;
+        padding: 3px;
+    }
+}
+
+
 // EXPAND TOGGLE -------------------------
 
 .ExpandToggle  {
@@ -446,10 +472,10 @@ ul.NavBar {
     .cardsContainer {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 1.5rem;
-  column-gap: 24px;
-  row-gap: 24x;
-  padding: 0 12px;
+        gap: 1.5rem;
+        column-gap: 24px;
+        row-gap: 24x;
+        padding: 0 12px;
     }
     
     .cardsContainer > .ProjectCard {
@@ -524,8 +550,6 @@ ul.NavBar {
             transition: transform 2s, 
         }
     }
-
-
     
     h4.subtitle {
         color: gray;

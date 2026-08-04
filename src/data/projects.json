@@ -40,7 +40,8 @@
     "description": [
       "I made this website to introduce myself as a developer and show the skills I have and what I've done so far. I'm still early on in my journey so I hope to add much more to this site as I progress in the future!"
     ],
-    "skills": ["responsive design"]
+    "skills": ["responsive design"],
+    "url": "https://github.com/cerithf/cerith-freeman"
   },
   {
     "name": "TerminalCal",
@@ -67,7 +68,8 @@
       "The purpose of the app was to allow Welsh learners to practise their conversation skills using a ChatGPT-powered chatbot. Users could select specific topics to practise talking about, and save their progress as they progressed through each topic.",
       "Users could also practise translating paragraphs, with the chatbot giving feedback to the user based on the quality of their answers."
     ],
-    "skills": ["design", "UI", "UX", "user authentication", "Welsh", "APIs"]
+    "skills": ["design", "UI", "UX", "user authentication", "Welsh", "APIs"],
+    "url": "https://github.com/cerithf/wrth-sgwrs"
   },
   {
     "name": "Rota",
