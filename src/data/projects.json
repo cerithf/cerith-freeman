@@ -82,6 +82,27 @@
     "skills": ["game design", "keeping scores", "logic"]
   },
   {
+    "name": "ForgetMeNot",
+    "subtitle": "An app designed to help those living with Alzheimer's complete their daily routines.",
+    "date": "April 2025",
+    "img": "forget_me_not.png",
+    "languages": ["Figma"],
+    "description": [
+      "As part of the Interactive System Design module of my university course, we were tasked with designing an app for those living with Alzheimer's. My group's research found that one of the best ways to help those with the condition is by encouraging and helping them to stick to familiar routines.",
+      "With that in mind, we created multiple prototypes to design what such an app might look like, mainly using Figma and Apple's design language. Our final prototype included user flows for creating, editing and following routines and included Home, Settings and Tutorial pages. While we weren't able to build the app itself, the UI was as complete and fleshed-out as possible."
+    ],
+    "skills": [
+      "design",
+      "user-based design",
+      "interactive design",
+      "persona development",
+      "user flow",
+      "prototyping",
+      "iterative design",
+      "accessible design"
+    ]
+  },
+  {
     "name": "Covid Dashboard",
     "subtitle": "A dashboard made as part of my uni course to show Covid cases by London borough.",
     "date": "December 2024",

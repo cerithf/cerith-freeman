@@ -487,6 +487,7 @@ ul.NavBar {
 
         .projectSkillsContainer {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
 
             & strong {
