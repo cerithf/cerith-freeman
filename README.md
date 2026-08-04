@@ -3,7 +3,7 @@
 A personal portfolio website written in React.
 
 <div class="site-preview-container">
-    <img src="./src/assets/projects/portfolio.png">
+    <img src="./src/assets/projects/portfolio.png" />
 </div>
 
 <style>
