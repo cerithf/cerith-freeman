@@ -58,6 +58,7 @@ const ProjectCard = ({ data }: Props) => {
       <a
         href={data.url}
         className={`ProjectCard ${projectClassName} ${data.underConstruction ? "under-construction" : ""}`}
+        title="Take a look at the code on GitHub!"
       >
         <ProjectCardContents data={data} />
       </a>

@@ -11,7 +11,7 @@ function NavBar() {
   });
 
   return (
-    <>
+    <nav>
       <ul
         className={useLocation().pathname == "/" ? "homePage NavBar" : "NavBar"}
       >
@@ -27,7 +27,7 @@ function NavBar() {
           </li>
         ))}
       </ul>
-    </>
+    </nav>
   );
 }
 

@@ -472,9 +472,7 @@ ul.NavBar {
     .cardsContainer {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        gap: 1.5rem;
-        column-gap: 24px;
-        row-gap: 24x;
+        gap: 2rem;
         padding: 0 12px;
     }
     
@@ -539,15 +537,14 @@ ul.NavBar {
 
         &:not(:hover) {
             transition: transform 1s;
-            transform: rotate(0deg);
+            transform: scale(1);
         }
 
         &:hover {
             z-index: 2 !important;
-            position: relative;  
             outline: $orange 6px solid;
-            transform: rotate(4deg);
-            transition: transform 2s, 
+            transform: scale(1.025);
+            transition: transform 0.5s, 
         }
     }
     

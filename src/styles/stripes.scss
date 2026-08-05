@@ -69,11 +69,11 @@ html:has(div.homePage) {
         font-size: 6em;
     }
 
-    #CircularText {
+    svg#CircularText {
         path {visibility: hidden;}
         position: relative;
-        left: 80px;
-        top: 370px;
+        left: 12px;
+        top: 400px;
         width: 100%;
         padding: 0;
         margin: 0;
@@ -118,15 +118,35 @@ html:has(div.homePage) {
     }
 }
 
-/* Smaller Viewport */
+/* Medium Viewport */
 
-@media (max-width: 600px) {
+@media (max-width: $BP-medium) {
+    .homePage.NavBar {
+        transform: scale(0.8);
+        right: 12px;
+        top: 0px;
+    }
+    
+    .homePage #headingContainer svg#CircularText {
+        font-size: 0.25em;
+        width: 80%;
+        animation: paused;
+        transform: rotate(75deg);
+        left: 12px;
+        top: 360px;
+    }
+}
+
+/* Small Viewport */
+
+@media (max-width: $BP-small) {
 .homePage.NavBar {
     position: relative;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 2;
+    transform: scale(1);
 
     li {
         flex: 1 1 0;
@@ -137,31 +157,22 @@ html:has(div.homePage) {
 .homePage {
     h1 {font-size: 5em !important;}
 }
-
-.stripe-group-1 {
+.stripe-group-1, svg#CircularText {
     display: none;
 }
 
 // Tiny viewport
 
 @media(max-height: 600px) {
-    .homePage.NavBar {
-        display: none;
-    }
-
-    #CircularText {
-        position: relative;
-        top: 290px !important;
-        left: 60px !important;
-    }
+    .homePage.NavBar {display: none;}
 }
 
 }
 
 // Short + wide viewport
 
-@media(max-height: 400px) {
-    .stripes, #CircularText {
+@media(max-height: 600px) {
+    .stripes, svg#CircularText {
         display: none;
     }
 
@@ -169,10 +180,17 @@ html:has(div.homePage) {
         top: 0;
         right: 0;
         height: 100%;
-        width: 40%;
+        width: 35%;
+
+        li {
+            font-size: 1em;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+        }
 
         li, a{
-            width: 100%
+            width: 100%;
         }
     }
 
