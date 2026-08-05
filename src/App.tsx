@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Work from "./pages/Work";
 import Education from "./pages/Education";
+import NotFound from "./pages/NotFound";
 // styles
 import "../src/styles/main.scss";
 // components
@@ -24,6 +25,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/work" element={<Work />} />
             <Route path="/education" element={<Education />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </Router>

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Selfie from "../assets/selfie.jpeg";
 import ColourfulList from "../components/ColourfulList";
 import { COLOURS } from "../utils/constants";
