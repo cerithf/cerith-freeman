@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import "../../src/styles/stripes.scss";
 import NavBar from "../components/NavBar";
 import CircularText from "../components/CircularText";
+import "../styles/pages/home.scss";
 
 const subtitle = "Front-end Developer";
 
 const Home = () => {
   return (
-    <div className="homePage">
+    <div className="page-content homePage">
       <div id="headingContainer">
         <CircularText radius={26} textColour="white">
           {subtitle}

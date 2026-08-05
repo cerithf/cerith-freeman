@@ -5,10 +5,11 @@ import ProjectCard from "../components/ProjectCard";
 import ProjectData from "../data/projects.json";
 import CodeImg from "../assets/code-slash.svg";
 import ImageBanner from "../components/ImageBanner";
+import "../styles/pages/projects.scss";
 
 const Projects = () => {
   return (
-    <div className="ProjectsPage">
+    <div className="page-content ProjectsPage">
       <h1 className="PageTitle">Projects</h1>
       <ImageBanner imageName="codeImg" path={CodeImg} />
       <div className="page-description">

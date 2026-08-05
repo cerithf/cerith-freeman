@@ -1,0 +1,234 @@
+@import "../main.scss";
+
+.EducationPage {
+
+    .ImageBanner {
+opacity: 40%;
+    }
+
+    .subtitle {
+        font-style: italic;
+        line-height: 100%;
+    }
+
+    .qualificationsSummary {
+        display: block;
+    }
+
+    ul.qualifications {
+        display: none;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .PageTitle {
+        text-align: left;
+    }
+
+    .circleContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        position: relative;
+        top: -72px;
+    }
+
+    .circle {        
+        $total: 4;
+        $radius: 280px;
+        position: relative;
+        $angle-offset: 25deg;
+        transform: rotate(-$angle-offset);
+        width: calc($radius *2);
+        height: calc($radius * 2);
+        border: solid white 10px;
+        border-top-color: transparent;
+        border-radius: 50%;
+
+        > div {
+            position: absolute;
+            top: 42%;
+            left: 35%;
+            width: 300px;
+            margin: -40px;
+            padding: 0px;
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        #EducationCard-0 {
+            $angle: calc(360deg / $total * 0.2 - 45deg);
+            transform: rotate($angle) translateX($radius) rotate(calc(-1 * $angle + $angle-offset));
+        }
+
+        #EducationCard-1 {
+            $angle: calc(360deg / $total * 1 - 45deg);
+            transform: rotate($angle) translateX($radius) rotate(calc(-1 * $angle + $angle-offset));
+        }
+
+        #EducationCard-2 {
+            $angle: calc(360deg / $total * 2.25 - 45deg);
+            transform: rotate($angle) translateX($radius) rotate(calc(-1 * $angle + $angle-offset));
+        }
+
+        #EducationCard-3 {
+            $angle: calc(360deg / $total * 3 - 45deg);
+            transform: rotate($angle) translateX($radius) rotate(calc(-1 * $angle + $angle-offset));
+            background-color: $orange;
+            
+            * {
+                color: white;
+            }
+
+            > .qualificationDisplay {
+                background-color: $purple;
+                color: white;
+            }
+        }
+
+        div.expandable:hover {
+            width: 400px;
+            top: 37%;
+            left: 20%;
+            z-index: 1;
+
+            ul.qualifications {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .qualificationsSummary {
+                display: none;
+            }
+        }
+
+        .cardHeader {
+            margin: 0;
+            padding: 18px;
+            padding-bottom: 0;
+        }
+
+        .qualificationDisplay {
+
+            background-color: #d9d9d9;
+            margin: 0;
+            text-align: center;
+            padding: 12px;
+
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            .qualificationName {
+                font-weight: bold;
+                font-size: 1.25em;
+                line-height: 100%;
+            }
+
+            .badge {
+                font-size: 0.8em;
+                background-color: #ffffff;
+                margin: 3px;
+                border-radius: 3px;
+                padding: 6px;
+                border: solid #3e3e3e 1px;
+                flex: 1 1 0;
+            }
+        }
+
+    }
+
+    // VIEWPORTS
+
+    // Medium
+    @media (max-width: $BP-medium) {
+
+        h1.PageTitle {
+            text-align: center;
+        }
+        
+        .circleContainer {
+            top: 0px;
+            margin-bottom: 120px;
+        }
+
+        .circle {
+            visibility: visible;
+            display: block;
+            border: none;
+            transform: rotate(0deg);
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 0px;
+            margin: 0;
+            border-radius: 12px;;
+            padding: 10px;
+            margin-top: 12px;
+
+            > div.EducationCard {
+                margin: 0px;
+                width: unset;
+                top: revert;
+                left: revert;
+                position: relative;
+                transform: none !important;
+                margin-bottom: 24px;
+                display: block;
+            }
+
+            > div.expandable:hover {
+                top: revert;
+                left: revert;
+                bottom: revert;
+                width: unset;
+
+                ul.qualifications {
+                   flex-wrap: nowrap;
+                }
+            }
+        }
+
+        .circle .cardHeader {
+            padding: 12px;
+            display: block;
+
+            h2 {
+                margin: 0;
+                padding: 0;
+            }
+
+            .school-name-and-subtitle {
+                display: flex;
+
+                .subtitle {
+                    text-align: right;
+                    flex: 1 1 0;
+                    align-self: center;
+                    padding: -10px;
+                    padding-top: 6px;
+                    margin: 0;
+                }
+            }
+        }
+
+        .qualificationDisplay {
+            display: block;
+            flex-direction: row;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: scroll;
+            overflow-y: hidden;
+
+            .badge {
+                overflow-wrap: break-word !important;
+                word-wrap: break-word !important;
+
+            }
+        }
+    }
+}

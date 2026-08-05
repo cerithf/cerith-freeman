@@ -1,0 +1,105 @@
+@import "../main.scss";
+
+.ExpandToggle  {
+
+    padding: 8px;
+    border-radius: 8px;
+    
+    strong {
+        font-family: $bodyFont;
+    }
+
+    span.expandToggleHeader {
+        display: flex;
+        align-items: center;
+    }
+
+    h3 {
+        position: relative;
+        top: 3px;
+        padding-left: 4px;
+        font-family: $headerFont;
+    }
+
+    button {
+        color: $orange;
+        background-color: $orange;
+        border: none;
+        font-weight: bold;
+        font-size: 1.5em;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        padding: 0px;
+        margin-right: 3px;
+    }
+
+    .content.expanded {
+        animation: none;
+        display: block;
+        animation: expandAnimation 0.2s linear 1 forwards;
+    }
+
+    .content.hidden {
+        animation: collapseAnimation 0.25s linear 1 forwards;
+    }
+
+    .ChevronImg {
+        position: relative;
+        width: 22px;
+        top: -5.5px;
+        left: 0px;
+        transition: transform 0.6s;
+    }
+
+    .ChevronImg.open {
+        transform: rotate(90deg);
+        left: 0px;
+        top: -5.5px;
+    }
+
+    @keyframes collapseAnimation {
+        from {
+            display:block;
+            opacity: 100%;
+        }
+
+        to {
+            opacity: 0%;
+            display: none;
+        }
+    }
+
+    @keyframes expandAnimation {
+        from {
+            opacity: 0%;
+            display: none;
+        }
+        to {
+            display:block;
+            opacity: 100%;
+        }
+
+
+    }
+}
+
+// Alternative style    
+.ExpandToggle-1 {
+
+    button {
+        transform: scale(0.75);
+    }
+
+    .content {
+        padding-top: 6px;
+        line-height: 100%;
+        font-weight: 300;
+    }
+
+    h3 {
+            font-family: $bodyFont;
+            font-size: 1.2em;
+            font-weight: bold;
+    }
+}

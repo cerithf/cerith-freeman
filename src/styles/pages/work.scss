@@ -1,0 +1,70 @@
+@import "../main.scss";
+
+.WorkPage {
+
+    .cardsContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .WorkCard {
+        min-width: 500px;
+        z-index: 1;
+
+        h2 {
+            color: black;
+            border-bottom: solid $orange;
+            padding: 6px 0 0 0;
+            line-height: 120%;
+            font-size: 2.5em;
+        }
+
+        span.companyName {
+            opacity: 60%;
+            font-weight: 300;
+        }
+
+
+        ul {
+            padding: 0 15px 0 30px;
+            list-style: none;
+        }
+        li {
+            text-align: justify;
+            text-indent: -24px; 
+        }
+
+        li::before {
+            content: '';
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url("../assets/check-circle.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            vertical-align: middle;
+            margin-right: 8px;
+            position: relative;
+            top: -1.5px;
+            left: 0px;
+        }
+
+        .ExpandToggle .content {
+        text-align: left;
+        }
+    }
+
+    span.PageTitle {
+        display: flex;
+        justify-content: center;
+    }
+
+    // Small viewport
+    @media(max-width: $BP-small) {
+        .WorkCard {
+            min-width: inherit;
+
+            li {font-size: 0.9em;}
+        }
+    }
+}

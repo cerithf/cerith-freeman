@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import useIsViewportLessThan from "../hooks/useIsViewportLessThan";
 import { BREAKPOINTS } from "../utils/constants";
 import { Link } from "react-router";
+import "../styles/components/nav_bar.scss";
 
 function NavBar() {
   const PageArray = ["about", "projects", "work", "education"];

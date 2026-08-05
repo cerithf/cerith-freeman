@@ -3,6 +3,7 @@ import Selfie from "../assets/selfie.jpeg";
 import ColourfulList from "../components/ColourfulList";
 import { COLOURS } from "../utils/constants";
 import { Link } from "react-router";
+import "../styles/pages/about.scss";
 //images
 import LinkImg from "../assets/link.svg";
 import LangImg from "../assets/chat.svg";
@@ -19,7 +20,7 @@ const handleDownloadCV = () => {
 
 const About = () => {
   return (
-    <div className="AboutPage">
+    <div className="page-content AboutPage">
       <div className="mainTile">
         <div className="header">
           <img src={Selfie} title="selfie" className="selfie" />

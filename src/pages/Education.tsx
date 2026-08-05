@@ -3,6 +3,7 @@ import educationData from "../data/education.json";
 import EducationCard from "../components/EducationCard";
 import GradImg from "../assets/mortarboard-fill.svg";
 import ImageBanner from "../components/ImageBanner";
+import "../styles/pages/education.scss";
 
 type EducationEntry = {
   school: string;
@@ -16,7 +17,7 @@ type EducationEntry = {
 
 const Education = () => {
   return (
-    <div className="EducationPage">
+    <div className="page-content EducationPage">
       <h1 className="PageTitle">Education</h1>
       <ImageBanner imageName="gradImg" path={GradImg} />
       <div className="circleContainer">

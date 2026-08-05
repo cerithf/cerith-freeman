@@ -1,0 +1,41 @@
+@import "../main.scss";
+
+// Here is the styling for the general nav bar, the home nav bar is different and is styled under the home page
+
+ul.NavBar {
+    list-style: none;
+    display: flex;
+    background-color: $red;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+
+    li {
+        display: flex;
+        font-family: $headerFont;
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+        flex: 1 1 0;
+        justify-content: center;
+    }
+
+    li:hover {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    li.active {
+        background-color: $purple;
+    }
+
+    a {
+        color: white;
+        font-weight: $heavyFont;
+        text-decoration: none;
+        padding: 0.5em;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+    }
+}

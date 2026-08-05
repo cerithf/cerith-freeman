@@ -1,0 +1,192 @@
+@import "../main.scss";
+
+.AboutPage {
+
+    display: flex;
+    flex-direction: column;
+
+    .selfie {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 100%;
+        align-self: center;
+    }
+
+    p {
+        font-size: 1.25em;
+        font-family: $sansSerifFont;
+        padding: 0.5em;
+        margin-bottom: 0;
+    }
+
+    .mainTile {
+        background-color: $beige;
+        padding: 2em;
+        padding-bottom: 1.5em;
+        max-width: 90%;
+        align-self: center;
+        * {color: black;}
+        
+        .header {
+            display: flex;
+
+            .title {
+                padding: 1em;
+            }
+
+            h1 {
+                font-size: 4.5em;
+            }
+        }
+    }
+
+    .bottomStrip {
+        display: flex;
+
+        .leftItems {
+            display: flex;
+            flex: 2 1 0;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+        }
+        
+        .listSection {
+            display: block;
+            flex: 1 1 0;
+            padding: 1em;
+
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            li {
+                border: none;
+                width: 100%;
+                position: relative;
+                list-style: none;
+                padding: 0.25em;
+                text-align: center;
+                margin: 0.5em;
+                z-index: 2;
+                min-width: 130px;
+
+                a, button {
+                    color: white;
+                    background-color: transparent;
+                    border: none;
+                    text-decoration: none;
+                    font-weight: $heavyFont;
+                }
+            }
+
+            #li-German {width: 75%;}
+            #li-Spanish {width: 50%;}
+
+        }
+    }
+
+    #linkSection li:hover {
+        top: 2px;
+    }
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            flex: 1 1 0;
+            padding: 1em;
+            z-index: 1;
+            min-width: 100px;
+        }
+    }
+
+    .image {
+        float: right;
+        opacity: 50%;
+        width: 150px;
+        position: relative;
+        top: -80px;
+    }
+
+    #LinkImg {
+        transform: rotate(-45deg);
+        top: -40px;
+        z-index: 1;
+    }
+
+    #LangImg {
+        width: 120px;
+        top: -40px;
+        transform: rotateY(180deg);
+        opacity: 40%;
+    }
+
+
+    #CodeImg {
+        top: -30px;
+        transform: rotate(-10deg);
+    }
+
+
+    // VIEWPORTS ---
+
+    // Medium
+    @media (max-width: $BP-medium) {
+
+        .title * {
+            line-height: 100%;
+            padding: 0px;
+            margin-bottom: 12px;
+        }
+
+        .leftItems {
+            flex-direction: column;
+        }
+
+        #linkSection {
+            height: 200px;
+
+            #LinkImg {
+                top: -50px;
+            }
+        }
+
+        #langSection {
+            height: 240px;
+            position: relative;
+            top: -80px;
+
+            #LangImg {
+                top: -100px;
+            }
+
+        }
+
+        }
+
+    // Small
+    @media (max-width: $BP-small) {
+
+        #langSection {
+            li, #li-German, #li-Spanish {width: 90%;}
+        }
+        #LangImg {
+            position: relative;
+            top: -130px !important;
+            left: 30px
+        }
+        
+        .header {
+            flex-direction: column;
+        }
+
+        .mainTile {
+            text-align: center;
+        }
+    }
+
+}

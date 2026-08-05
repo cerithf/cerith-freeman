@@ -1,5 +1,6 @@
 import { ReactNode, useState } from "react";
 import Chevron from "../assets/chevron-right-solid-full.svg";
+import "../styles/components/expand_toggle.scss";
 
 interface Props {
   title: string;
