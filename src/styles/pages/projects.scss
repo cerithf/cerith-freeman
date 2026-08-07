@@ -65,7 +65,7 @@
 
     }
 
-    a.ProjectCard {
+    .cardsContainer > a.ProjectCard {
         text-decoration: none; 
 
         &:not(:hover) {
@@ -105,7 +105,8 @@
 
     // Under construction border:
 
-    .cardsContainer > .under-construction:not(:hover) {
+    .cardsContainer > div.under-construction,
+    .cardsContainer > a.under-construction:not(:hover) {
     position: relative;
     overflow: hidden;
    
