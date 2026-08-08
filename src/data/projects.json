@@ -81,7 +81,8 @@
       "I recreated a Roman game called \"Rota\" using PyGame. I made a main menu, single- and multi-player game modes and a how-to-play page.",
       "How to play: Players take turns placing their three pins onto the board, and then move one of their pins to an adjacent free space. The first player to line up their pins in a row is the winner."
     ],
-    "skills": ["game design", "keeping scores", "logic"]
+    "skills": ["game design", "keeping scores", "logic"],
+    "url": "https://github.com/cerithf/Rota-Game/blob/main/main.py"
   },
   {
     "name": "ForgetMeNot",
