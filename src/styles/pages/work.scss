@@ -3,12 +3,13 @@
 .WorkPage {
 
     .cardsContainer {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 1rem;
+        padding: 0 12px;
     }
 
     .WorkCard {
-        min-width: 500px;
         z-index: 1;
 
         h2 {
@@ -27,27 +28,28 @@
 
         ul {
             padding: 0 15px 0 30px;
-            list-style: none;
+            // list-style: none;
         }
         li {
             text-align: justify;
-            text-indent: -24px; 
+            // text-indent: -24px; 
         }
 
-        li::before {
-            content: '';
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            background-image: url("../assets/check-circle.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            vertical-align: middle;
-            margin-right: 8px;
-            position: relative;
-            top: -1.5px;
-            left: 0px;
-        }
+        // li::before {
+        //     content: '';
+        //     border: solid red;
+        //     display: inline-block;
+        //     width: 16px;
+        //     height: 16px;
+        //     background-image: url("../assets/check-circle.svg");
+        //     background-size: contain;
+        //     background-repeat: no-repeat;
+        //     vertical-align: middle;
+        //     margin-right: 8px;
+        //     position: relative;
+        //     top: -1.5px;
+        //     left: 0px;
+        // }
 
         .ExpandToggle .content {
         text-align: left;
@@ -62,9 +64,14 @@
     // Small viewport
     @media(max-width: $BP-small) {
         .WorkCard {
-            min-width: inherit;
-
+            min-width: none !important;
+            margin: 12px 12px 24px 12px;
             li {font-size: 0.9em;}
+        }
+
+        .cardsContainer {
+            padding: 0;
+            display: block;
         }
     }
 }

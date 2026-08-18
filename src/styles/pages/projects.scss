@@ -1,147 +1,145 @@
 @import "../main.scss";
 
 .ProjectsPage {
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2rem;
+    padding: 0 12px;
+  }
 
-    .cardsContainer {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        gap: 2rem;
-        padding: 0 12px;
-    }
-    
-    .cardsContainer > .ProjectCard {
-        color: black;
-        z-index: 1;
-        background-color: white;
-        border-radius: 12px;
-        align-items: end;
-        padding: 16px;
-        min-width: 400px;
-        min-height: 360px;
-        overflow: hidden;
+  .cardsContainer > .ProjectCard {
+    color: black;
+    z-index: 1;
+    background-color: white;
+    border-radius: 12px;
+    align-items: end;
+    padding: 16px;
+    min-width: 400px;
+    min-height: 360px;
+    overflow: hidden;
 
-        h2 {
-            padding-top: 6px;
-        }
-
-        img {
-            width: 100%;
-            border-radius:  8px;
-            aspect-ratio: 440 / 248;
-        }
-
-        .projectInfo {
-            padding: 2px;
-        }
-
-        p.dateDisplay {
-            padding: 8px 0;
-        }
-        .badges, .projectSkillsContainer {
-            padding: 0;
-            overflow-x: scroll;
-        }
-
-        .projectSkillsContainer {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-
-            & strong {
-                padding-right: 12px;
-                position: relative;
-                top: -1px;
-            }
-
-            & strong, & .badge {
-                height: 100%;
-            }
-        }
-
-        .badge {
-            margin-left: 0;
-        }
-
-
+    h2 {
+      padding-top: 6px;
     }
 
-    .cardsContainer > a.ProjectCard {
-        text-decoration: none; 
-
-        &:not(:hover) {
-            transition: transform 1s;
-            transform: scale(1);
-        }
-
-        &:hover {
-            z-index: 2 !important;
-            outline: $orange 6px solid;
-            transform: scale(1.025);
-            transition: transform 0.5s, 
-        }
+    img {
+      width: 100%;
+      border-radius: 8px;
+      aspect-ratio: 440 / 248;
     }
-    
-    h4.subtitle {
-        color: gray;
-        font-size: 18px;
-        font-style: italic;
-        font-weight: 300;
+
+    .projectInfo {
+      padding: 2px;
     }
 
     p.dateDisplay {
-        text-align: right;
+      padding: 8px 0;
+    }
+    .badges,
+    .projectSkillsContainer {
+      padding: 0;
+      overflow-x: scroll;
     }
 
-    div.description p {
-        text-align: justify;
-        margin: 6px 0;
+    .projectSkillsContainer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      & strong {
+        padding-right: 12px;
+        position: relative;
+        top: -1px;
+      }
+
+      & strong,
+      & .badge {
+        height: 100%;
+      }
     }
 
-    @media(max-width: $BP-medium) {
-        div.cardsContainer {
-            padding: 0 5%;
-        }
+    .badge {
+      margin-left: 0;
+    }
+  }
+
+  .cardsContainer > a.ProjectCard {
+    text-decoration: none;
+
+    &:not(:hover) {
+      transition: transform 1s;
+      transform: scale(1);
     }
 
-    // Under construction border:
+    &:hover {
+      z-index: 2 !important;
+      outline: $orange 6px solid;
+      transform: scale(1.025);
+      transition: transform 0.5s;
+    }
+  }
 
-    .cardsContainer > div.under-construction,
-    .cardsContainer > a.under-construction:not(:hover) {
+  h4.subtitle {
+    color: gray;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  p.dateDisplay {
+    text-align: right;
+  }
+
+  div.description p {
+    text-align: justify;
+    margin: 6px 0;
+  }
+
+  @media (max-width: $BP-medium) {
+    div.cardsContainer {
+      padding: 0 5%;
+    }
+  }
+
+  // Under construction border:
+
+  .cardsContainer > div.under-construction,
+  .cardsContainer > a.under-construction:not(:hover) {
     position: relative;
     overflow: hidden;
-   
+
     &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 12px;
-    padding: 8px;
-    background: repeating-linear-gradient(
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 12px;
+      padding: 8px;
+      background: repeating-linear-gradient(
         45deg,
         $yellow 0,
         $yellow 20px,
         $darkBrown 20px,
         $darkBrown 40px
-    );
-    // for Safari:
-    -webkit-mask:
+      );
+      // for Safari:
+      -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    // for Chrome/Firefox:
-    mask:
+      -webkit-mask-composite: xor;
+      // for Chrome/Firefox:
+      mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
-    mask-composite: exclude;
+      mask-composite: exclude;
     }
-}
+  }
 
-    // Medium Viewport
+  // Medium Viewport
 
-    @media (max-width: $BP-medium) {
-
-        .ProjectCard {
-            margin: 0 10%;
-        }
+  @media (max-width: $BP-medium) {
+    .ProjectCard {
+      margin: 0 10%;
     }
+  }
 }
